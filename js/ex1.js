@@ -147,6 +147,22 @@ soma_args(n1,n2);
 
 console.log('--------------------------');
 
+console.log("Treino 7 Função");
+
+function valor_imc(peso,altura) {
+    var imc = peso / (altura * altura);
+    return imc;
+}
+
+var meu_peso = document.getElementById("peso").innerHTML;
+var minha_altura = document.getElementById("altura").innerHTML;
+
+var meu_imc = valor_imc(meu_peso,minha_altura);
+
+document.getElementById("imc").innerHTML = meu_imc.toFixed(2);
+
+console.log('--------------------------');
+
 console.log("Treino 7");
 
 
