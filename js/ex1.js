@@ -49,10 +49,30 @@ console.log('--------------------------');
 
 console.log("Questão 5");
 
-var potencia = Math.pow(32,6);
+var potencia = Math.pow(32,6); //Math.pow = potencia
 
 console.log('Potencia 32,6 = ' + potencia);
 
 console.log("Solte no console o resultado da operação 32,6.");
 
 console.log('--------------------------');
+
+console.log("Questão 6");
+
+
+
+console.log("O arquivo 'ex1.js' está funcionando");
+
+console.log('--------------------------');
+
+//Trabalhando com Dom;
+
+console.log("Treino 1");
+
+
+console.log("Trabalhando com Dom");
+
+document.getElementById("caixa_amarela").innerHTML = '<h1>' + 'Folha de Exercícios JavaScript' + '</h1>';
+
+console.log('--------------------------');
+
