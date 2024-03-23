@@ -100,7 +100,7 @@ soma_numeros(); //Dentro do parenteses usa argumentos/invocar a funçao desta fo
 
 console.log('--------------------------');
 
-console.log("Treino 4");
+console.log("Treino 4 Função");
 
 function media_aluno() {
     var aluno1 = 10;
@@ -111,8 +111,28 @@ function media_aluno() {
 
     console.log(media);
 }
-
+//Invocar a função;
 media_aluno();
+
+console.log('--------------------------');
+
+console.log("Treino 5 Função dinamica");
+
+// Função dinamica
+
+function soma_args(num1,num2) {
+    var soma = num1 + num2;
+    console.log(soma);
+}
+
+soma_args(10,25);
+soma_args(100,125);
+soma_args(110,250);
+
+console.log('--------------------------');
+
+console.log("Treino ");
+
 
 
 
