@@ -76,3 +76,13 @@ document.getElementById("caixa_amarela").innerHTML = '<h1>' + 'Folha de Exercíc
 
 console.log('--------------------------');
 
+console.log("Treino 2");
+
+console.log("Trabalhando com Dom adicionar h1 em um titulo");
+
+var conteudo = document.getElementById("caixa_azul").innerHTML;
+
+document.getElementById("caixa_azul").innerHTML = '<h1>' + conteudo + '</h1>';
+
+console.log('--------------------------');
+
