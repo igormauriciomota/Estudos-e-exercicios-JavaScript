@@ -86,3 +86,33 @@ document.getElementById("caixa_azul").innerHTML = '<h1>' + conteudo + '</h1>';
 
 console.log('--------------------------');
 
+// Aula 11 - Funçoes; => function
+console.log("Treino 3");
+
+function soma_numeros() {
+    var x = 5;
+    var y = 2;
+    var soma = x + y;
+    console.log(soma);
+}
+
+soma_numeros(); //Dentro do parenteses usa argumentos/invocar a funçao desta forma
+
+console.log('--------------------------');
+
+console.log("Treino 4");
+
+function media_aluno() {
+    var aluno1 = 10;
+    var aluno2 = 6;
+    var aluno3 = 7;
+    var aluno4 = 8;
+    var media = (aluno1 + aluno2 + aluno3 + aluno4) / 2;
+
+    console.log(media);
+}
+
+media_aluno();
+
+
+
