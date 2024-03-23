@@ -147,7 +147,7 @@ soma_args(n1,n2);
 
 console.log('--------------------------');
 
-console.log("Treino 7 Função");
+console.log("Treino 7 Função string");
 
 function valor_imc(peso,altura) {
     var imc = peso / (altura * altura);
@@ -163,7 +163,27 @@ document.getElementById("imc").innerHTML = meu_imc.toFixed(2);
 
 console.log('--------------------------');
 
-console.log("Treino 7");
+console.log("Treino 8 Função numero (number)");
+
+function valor_imc(peso,altura) {
+    var imc = peso / (altura * altura);
+    return imc;
+}
+
+var meu_peso = parseFloat(document.getElementById("peso").innerHTML);
+console.log(typeof meu_peso);
+var minha_altura = parseFloat(document.getElementById("altura").innerHTML);
+
+var meu_imc = valor_imc(meu_peso,minha_altura);
+
+document.getElementById("imc").innerHTML = meu_imc.toFixed(2);
+
+
+onsole.log('--------------------------');
+
+console.log("Treino 9 Tipo de dados (Arrays) ");
+
+
 
 
 
