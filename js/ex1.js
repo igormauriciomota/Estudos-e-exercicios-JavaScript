@@ -131,7 +131,24 @@ soma_args(110,250);
 
 console.log('--------------------------');
 
-console.log("Treino ");
+console.log("Treino 6 função");
+
+// Função dinamica
+
+function soma_args(num1,num2) {
+    var soma = num1 + num2;
+    console.log(soma);
+}
+
+var n1 = 50;
+var n2 = 30;
+
+soma_args(n1,n2);
+
+console.log('--------------------------');
+
+console.log("Treino 7");
+
 
 
 
