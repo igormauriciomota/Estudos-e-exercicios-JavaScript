@@ -267,6 +267,9 @@ alunos.push("Luiz", "Igor");
 
 console.log(alunos);
 
+console.log('---------------------------------------');
+
+console.log( 'Objetos');
 
 
 
