@@ -312,4 +312,34 @@ var fahrenheit = celsiusToFahrenheit(celsius);
 
 document.getElementById("caixa_amarela1").innerHTML = "<strong>" + fahrenheit + "</strong>";
 
+console.log('--------------------------');
+
+//--------------------------------------
+// Ex: 03  "Mariana", "Felipe" e "Carla".
+
+console.log('Exercicio 03');
+
+var grupos = [
+    [ "João" , "Maria" ],
+    [ "Pedro" , "Joana", "André", "Júlio" ],
+    [ "Carolina" , "Helena", "Marcelo" ]
+];
+
+var novos_grupos = grupos.slice(-2);
+
+novos_grupos.push([ "Mariana", "Felipe", "Carla" ]);
+
+console.log(novos_grupos);
+
+
+console.log('--------------------------');
+
+//--------------------------------------
+// Ex: 04
+
+console.log('Exercicio 04');
+
+
+
+
 
