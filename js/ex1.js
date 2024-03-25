@@ -325,6 +325,55 @@ console.log(cursos);
 console.log(cursos[2].categorias[1]);
 
 
+console.log('---------------------------------------');
+
+console.log('Metodos de objetos'); // Açoes que podem ser aplicada em um objeto.
+
+var aluno = {
+    'nome': 'Maria',
+    'sobrenome': 'Pereira',
+    'ano_nasc': 1992,
+    'nome_completo': function () {
+        var n_completo = this.nome + " " + this.sobrenome;
+        return n_completo;
+    },
+    'ver_idade': function () {
+        var idade = 2024 - this.ano_nasc;
+        return idade;
+    }
+};
+
+console.log( aluno.nome_completo() );
+
+console.log('A idade e: ' + aluno.ver_idade());
+
+
+console.log('---------------------------------------');
+
+
+console.log('Metodos de objetos ex1'); // Açoes que podem ser aplicada em um objeto.
+
+var aluno = {
+    'nome': 'Maria',
+    'sobrenome': 'Pereira',
+    'ano_nasc': 1992,
+    'ano_atual': 2024,
+    'idade': function () {
+        var idad = this.ano_atual - " " - this.ano_nasc;
+        return idad;
+    }
+};
+
+console.log( aluno.idade() );
+
+console.log('---------------------------------------');
+
+// cosole e um -> objeto
+// log e um argumento
+
+document.getElementById("tudo_obj");
+
+
 
 
 
