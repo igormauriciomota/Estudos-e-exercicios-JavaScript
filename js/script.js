@@ -64,7 +64,7 @@ console.log("Questão 6");
 function soma_args(num1,num2) {
     var soma = num1 + num2;
     console.log(soma);
-}
+};
 
 var n1 = 50;
 var n2 = 30;
@@ -78,7 +78,7 @@ console.log("Treino 7 Função string");
 function valor_imc(peso,altura) {
     var imc = peso / (altura * altura);
     return imc;
-}
+};
 
 var meu_peso = document.getElementById("peso").innerHTML;
 var minha_altura = document.getElementById("altura").innerHTML;
@@ -89,7 +89,7 @@ document.getElementById("imc").innerHTML = meu_imc.toFixed(2);
 
 console.log('--------------------------');
 
-console.log( 'Array');
+console.log('Array');
 
 var alunos = [ "João" , "Maria", "José" ];
 var num_primos = [ 2, 3, 5, 7, 11, 13 ];
@@ -100,7 +100,7 @@ console.log(num_primos[10]);
 
 console.log('---------------------------------------');
 
-console.log( 'Array' + ' multi dimencionais ');
+console.log('Array' + ' multi dimencionais ');
 
 var grupos = [
     [ "João" , "Maria" ],  //Primeiro elemento (0)
@@ -295,7 +295,21 @@ document.getElementById('resultado').innerHTML = "<strong>" + soma_nun + "</stro
 
 console.log('--------------------------');
 
-console.log('exercicio 02');
+//--------------------------------------
+// Ex: 02
 
+console.log('Exercicio 02');
+
+function celsiusToFahrenheit(temp_c) {
+    var temp_f = (9 * temp_c / 5) + 32;
+    return temp_f;
+};
+
+
+var celsius = parseFloat(document.getElementById("caixa_azul1").innerHTML);
+
+var fahrenheit = celsiusToFahrenheit(celsius);
+
+document.getElementById("caixa_amarela1").innerHTML = "<strong>" + fahrenheit + "</strong>";
 
 
