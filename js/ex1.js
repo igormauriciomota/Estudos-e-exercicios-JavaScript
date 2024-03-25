@@ -178,10 +178,9 @@ var meu_imc = valor_imc(meu_peso,minha_altura);
 
 document.getElementById("imc").innerHTML = meu_imc.toFixed(2);
 
+console.log('---------------------------------------')
 
-console.log('--------------------------');
-
-console.log("Treino 9 Tipo de dados (Arrays) ");
+console.log( 'Array');
 
 var alunos = [ "João" , "Maria", "José" ];
 var num_primos = [ 2, 3, 5, 7, 11, 13 ];
@@ -190,9 +189,9 @@ console.log(alunos.length);
 console.log(num_primos[2]);
 console.log(num_primos[10]);
 
-console.log('--------------------------');
+console.log('---------------------------------------')
 
-console.log( 'ATreino 10 Tipo de dados (Arrays) multi dimencionais ');
+console.log( 'Array' + ' multi dimencionais ');
 
 var grupos = [
     [ "João" , "Maria" ],  //Primeiro elemento (0)
@@ -202,10 +201,82 @@ var grupos = [
 
 console.log(grupos.length);
 console.log(grupos[1]);
+console.log(grupos[1] [1]);
 
-console.log('--------------------------');
+console.log('---------------------------------------')
 
-console.log("Treino 11 Tipo de dados (Arrays) ");
+//============================================
+
+// Operações com arrays
+
+// Push - Adiciona elementos ao final de um array
+// Pop - Remove o último elemento de um array
+// hift - Remove o primeiro elemento de um array
+// Unshift - Adiciona elementos ao início de um array
+
+var cursos = [ "HTML", "Python", "PHP" ];
+
+cursos.push("Javascript");
+
+console.log(cursos);  // O console mostrará [ "HTML", "Python", "PHP", "Javascript" ]
+
+cursos.unshift("Bootstrap");
+
+console.log(cursos);  // O console mostrará [ "Bootstrap", "HTML", "Python", "PHP", "Javascript" ]
+
+cursos.pop();
+
+console.log(cursos);  // O console mostrará [ "Bootstrap", "HTML", "Python", "PHP" ]
+
+cursos.shift();
+
+console.log(cursos);  // O console mostrará [ "HTML", "Python", "PHP" ]
+
+console.log('---------------------------------------')
+
+console.log('Mudar o nome' + '"pão branco", "queijo", "presunto"');
+
+var ingredientes = ["pão branco", "queijo", "presunto" ];
+
+ingredientes[0] = "pão integral";
+
+console.log(ingredientes);
+
+ingredientes[3] = "maionese";
+
+console.log(ingredientes);
+
+//Para acrescentar sempre usaar o push ou o Unshift.
+
+ingredientes.push("pão frances", "mostarda");
+
+console.log(ingredientes);
+
+console.log('---------------------------------------')
+
+// Array 0 e o joão
+
+alunos = [ "João" , "Maria", "José", "Fernanda", "Pedro", "Elisa" ]; // console: ["João" , "Maria", "José"]
+
+console.log(alunos.slice(0,3));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
