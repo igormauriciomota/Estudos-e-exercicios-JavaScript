@@ -179,11 +179,33 @@ var meu_imc = valor_imc(meu_peso,minha_altura);
 document.getElementById("imc").innerHTML = meu_imc.toFixed(2);
 
 
-onsole.log('--------------------------');
+console.log('--------------------------');
 
 console.log("Treino 9 Tipo de dados (Arrays) ");
 
+var alunos = [ "João" , "Maria", "José" ];
+var num_primos = [ 2, 3, 5, 7, 11, 13 ];
 
+console.log(alunos.length);
+console.log(num_primos[2]);
+console.log(num_primos[10]);
+
+console.log('--------------------------');
+
+console.log( 'ATreino 10 Tipo de dados (Arrays) multi dimencionais ');
+
+var grupos = [
+    [ "João" , "Maria" ],  //Primeiro elemento (0)
+    [ "Pedro" , "Joana", "André", "Júlio" ], //segundo elemento (1)
+    [ "Carolina" , "Helena", "Marcelo" ] //terceiro elemento (2)
+];
+
+console.log(grupos.length);
+console.log(grupos[1]);
+
+console.log('--------------------------');
+
+console.log("Treino 11 Tipo de dados (Arrays) ");
 
 
 
