@@ -178,7 +178,7 @@ var meu_imc = valor_imc(meu_peso,minha_altura);
 
 document.getElementById("imc").innerHTML = meu_imc.toFixed(2);
 
-console.log('---------------------------------------')
+console.log('---------------------------------------');
 
 console.log( 'Array');
 
@@ -189,7 +189,7 @@ console.log(alunos.length);
 console.log(num_primos[2]);
 console.log(num_primos[10]);
 
-console.log('---------------------------------------')
+console.log('---------------------------------------');
 
 console.log( 'Array' + ' multi dimencionais ');
 
@@ -203,7 +203,7 @@ console.log(grupos.length);
 console.log(grupos[1]);
 console.log(grupos[1] [1]);
 
-console.log('---------------------------------------')
+console.log('---------------------------------------');
 
 //============================================
 
@@ -232,7 +232,7 @@ cursos.shift();
 
 console.log(cursos);  // O console mostrará [ "HTML", "Python", "PHP" ]
 
-console.log('---------------------------------------')
+console.log('---------------------------------------');
 
 console.log('Mudar o nome' + '"pão branco", "queijo", "presunto"');
 
@@ -252,13 +252,21 @@ ingredientes.push("pão frances", "mostarda");
 
 console.log(ingredientes);
 
-console.log('---------------------------------------')
+console.log('---------------------------------------');
 
 // Array 0 e o joão
 
 alunos = [ "João" , "Maria", "José", "Fernanda", "Pedro", "Elisa" ]; // console: ["João" , "Maria", "José"]
 
 console.log(alunos.slice(0,3));
+console.log(alunos.slice(0,-2));
+console.log(alunos.slice(-2));
+console.log(alunos.slice(-1));
+
+alunos.push("Luiz", "Igor");
+
+console.log(alunos);
+
 
 
 
