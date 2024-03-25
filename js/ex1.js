@@ -269,7 +269,60 @@ console.log(alunos);
 
 console.log('---------------------------------------');
 
-console.log( 'Objetos');
+// ============ Objetos =====================
+
+console.log('Objetos');
+
+var funcionario = {
+    'nome': 'Pedro Souza Gomes',
+    'ano_nasc': 1972,
+    'cpf': '111.111.111.11',
+    'cargo': 'Analista de Sistemas'
+};
+
+console.log(funcionario['nome']);
+console.log(funcionario.ano_nasc);
+
+funcionario.cargo = "Gerente de T.I";
+funcionario.cnh = "1982736455";
+
+console.log(funcionario);
+
+console.log('---------------------------------------');
+
+console.log('Arreys e Objetos multe dimencionais');
+
+var cursos = [
+    {
+        'titulo': 'Aprenda programação em Python 3 com facilidade do zero',
+        'avaliacoes': 680,
+        'alunos': 2300,
+        'categorias': ['programacao', 'tecnologia']
+    },
+
+    {
+        'titulo': 'Aprenda PHP e faça sites dinâmicos',
+        'avaliacoes': 180,
+        'alunos': 350,
+        'categorias': ['desenvolvimento web', 'programacao']
+    },
+
+    {
+        'titulo': 'Excel do Zero ao Avançado',
+        'avaliacoes': 420,
+        'alunos': 1800,
+        'categorias': ['produtividade', 'gestão']
+    }
+    
+];
+
+console.log(cursos[1].categorias[0]);
+
+cursos[2].categorias[1] = "Administração de empresas";
+
+console.log(cursos);
+
+console.log(cursos[2].categorias[1]);
 
 
 
