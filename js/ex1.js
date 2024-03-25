@@ -371,8 +371,9 @@ console.log('---------------------------------------');
 // cosole e um -> objeto
 // log e um argumento
 
-document.getElementById("tudo_obj");
+console.log( typeof document.getElementById("tudo_obj") );
 
+console.log( document.getElementById("tudo_obj").innerHTML );
 
 
 
