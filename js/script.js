@@ -405,5 +405,23 @@ var tabela = criar_tabela(pessoa);
 document.getElementById("tabela").innerHTML = tabela;
 
 
+console.log('--------------------------');
+
+//--------------------------------------
+
+// Eventos Aula 16
+
+document.getElementById("click-me").onclick = function () {
+    alert("Voce clicou no botão");
+};
+
+console.log('--------------------------');
+
+//--------------------------------------
+
+// Eventos Aula 16
+
+
+
 
 
