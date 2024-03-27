@@ -373,6 +373,36 @@ document.getElementById("total_aval").innerHTML = total_av;
 
 console.log('--------------------------');
 
+//--------------------------------------
+// Ex: 05 --  Criar o Objeto+
+
+console.log('Exercicio 05');
+
+var pessoa = {
+    'nome': 'Marina',
+    'sobrenome': 'Lopes',
+    'email': 'igormota@gmail.com'
+};
+
+function criar_tabela(person) {
+    var tabelaHTLM = '<div class="tableBox">';
+    tabelaHTLM +=       '<table>';
+    tabelaHTLM +=           '<tr>';
+    tabelaHTLM +=               '<th>Nome Completo</th>';
+    tabelaHTLM +=                '<th>Email</th>';
+    tabelaHTLM +=           '</tr>';
+    tabelaHTLM +=           '<tr>';
+    tabelaHTLM +=               '<td>' + person.nome + ' ' + person.sobrenome + '</td>';
+    tabelaHTLM +=               '<td>' + person.email + '</td>';
+    tabelaHTLM +=           '</tr>';
+    tabelaHTLM +=        '</table>';
+    tabelaHTLM +=     '</div>';
+    return tabelaHTLM;
+}
+
+var tabela = criar_tabela(pessoa);
+
+document.getElementById("tabela").innerHTML = tabela;
 
 
 
