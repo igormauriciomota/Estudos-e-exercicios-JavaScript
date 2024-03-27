@@ -417,9 +417,17 @@ document.getElementById("click-me").onclick = function () {
 
 console.log('--------------------------');
 
-//--------------------------------------
+//--------------------------
 
-// Eventos Aula 16
+document.getElementById("hover-me").onmouseover = function () {
+    alert("Voce passou com o cursor no botão");
+};
+
+//-------------------------
+
+document.getElementById("leave-me").onmouseout = function () {
+    alert("Voce saiu com o cursor do botão");
+};
 
 
 
