@@ -429,7 +429,15 @@ document.getElementById("leave-me").onmouseout = function () {
     alert("Voce saiu com o cursor do botão");
 };
 
+//----------------------------------
 
+document.onkeydown = function() {
+    alert('Você apertou a tecla: ');
+};
 
+//========================================================= Eventos Js
 
-
+function eventoClick() {
+    //alert('Adicinou um evento de Click');
+    document.body.style.backgroundColor = "yellow";
+}

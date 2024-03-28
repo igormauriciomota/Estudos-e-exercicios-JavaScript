@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    #area {
+        border: 2px solid red;
+        text-align: center;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    #area1 {
+        margin: auto auto;
+        width: 80%;
+        height: 200px;
+        background: blue;
+        text-align: center;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    button {
+        color: blueviolet;
+        border-bottom: 1px solid;
+        padding: 10px;
+
+    }
+
+
+</style>
+<body>
+    <!-- Evento de click duplo -->
+    <div id="area">
+        <h1>Evento Javascript</h1>
+        <h2>Evento click duplo</h2>
+        <p id="texto"></p>
+        <button ondblclick="eventoDblClick()">Clique 1</button>
+    </div>
+    <div id="area">
+        <h1>Evento Javascript</h1>
+        <h2>Eventos Click cor</h2>
+        <p id="texto"></p>
+        <button onclick="eventoClick1()">Clique Amarelo 2</button>
+    </div>
+    <div id="area1">
+        <h1>Evento Javascript</h1>
+        <h2>Eventos Mouse</h2>
+        <p id="texto"></p>
+    </div>
+    <div id="area">
+        <h1>Evento Javascript</h1>
+        <h2>Eventos click cor</h2>
+        <p id="texto"></p>
+        <button onclick="eventoClick2()">Clique branco 4</button>
+    </div>
+
+    <script src="js/eventos.js"></script>
+
+</body>
+</html>

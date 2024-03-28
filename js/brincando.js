@@ -120,6 +120,32 @@ console.log(temperatura);
 
 
 
+// Click aprender 
+/*document.getElementById("area").innerHTML = area;
+
+var a = window.document.getElementById('area');
+a.addEventListener('click', clicar)
+a.addEventListener('mouseenter', entrar)
+a.addEventListener('mouseout', sair)
+
+function clicar() {
+    a.innerHTML = 'Clicou'
+    a.style.background = 'red'
+}
+
+function entrar() {
+    a.innerHTML = 'Entrou'
+}
+
+function sair() {
+    a.innerHTML = 'saiu'
+    a.style.background = 'green'
+}*/
+
+
+
+
+
 
 
 
