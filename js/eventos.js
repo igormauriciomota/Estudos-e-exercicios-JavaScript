@@ -13,3 +13,7 @@ function eventoClick1() {
 function eventoClick2() {
     document.body.style.backgroundColor = "white";
 }
+
+function button_clicked() {
+    alert("Voce clicou no botão");
+}
