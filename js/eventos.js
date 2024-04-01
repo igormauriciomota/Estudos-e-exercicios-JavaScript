@@ -47,3 +47,12 @@ botao.onclick = function() {
     botao.style.transform = "translateX(150px)";
 };
 
+// => document.getElementById (puchar o Elemento pelo -> Id ); retorna um OBJETO
+//=> document.getElementsByClassName (pucha o Elemento pela -> class ) retorna um Arrey
+
+var exemplo = document.getElementsByClassName("exemplo");
+
+exemplo[0].innerHTML = "teste1";
+
+console.log(exemplo);
+
