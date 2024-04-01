@@ -31,4 +31,11 @@ document.getElementById("botao_cor2").onclick = function() {
     document.getElementById("botao_cor2").style.transform = "translateX(100px)";
 };
 
+// Para evitar escrever muitos codigos pode usar a Kiword (this.)
+
+document.getElementById("botao_cor3").onclick = function() {
+    this.style['background-color'] = "red";
+    this.style.transform = "translateX(150px)";
+};
+
 
