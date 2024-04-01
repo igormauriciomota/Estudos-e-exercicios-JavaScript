@@ -25,3 +25,10 @@ document.getElementById("botao_cor").onclick = function() {
 document.getElementById("botao_cor1").onclick = function() {
     document.getElementById("botao_cor1").style['background-color'] = "black";
 };
+
+document.getElementById("botao_cor2").onclick = function() {
+    document.getElementById("botao_cor2").style['background-color'] = "black";
+    document.getElementById("botao_cor2").style.transform = "translateX(100px)";
+};
+
+
