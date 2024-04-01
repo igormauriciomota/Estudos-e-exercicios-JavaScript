@@ -17,3 +17,7 @@ function eventoClick2() {
 function button_clicked() {
     alert("Voce clicou no botão");
 }
+
+document.getElementById("botao_cor").onclick = function() {
+    document.getElementById("botao_cor").style.height = "100px";
+};
