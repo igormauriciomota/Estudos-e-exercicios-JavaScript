@@ -21,3 +21,7 @@ function button_clicked() {
 document.getElementById("botao_cor").onclick = function() {
     document.getElementById("botao_cor").style.height = "100px";
 };
+
+document.getElementById("botao_cor1").onclick = function() {
+    document.getElementById("botao_cor1").style['background-color'] = "black";
+};
