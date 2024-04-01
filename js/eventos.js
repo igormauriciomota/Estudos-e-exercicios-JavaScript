@@ -38,4 +38,12 @@ document.getElementById("botao_cor3").onclick = function() {
     this.style.transform = "translateX(150px)";
 };
 
+// Pode usar tambemn uma variavel para manipular um botão;
+
+var botao = document.getElementById("botao_cor");
+
+botao.onclick = function() {
+    botao.style['background-color'] = "red";
+    botao.style.transform = "translateX(150px)";
+};
 
