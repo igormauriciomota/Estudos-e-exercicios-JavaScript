@@ -56,3 +56,59 @@ exemplo[0].innerHTML = "teste1";
 
 console.log(exemplo);
 
+//=> Aula 19 - Loops são estruturas de repetição de comandos.
+
+//Loop = for
+
+for (var a = 0; a < 5; a++) {
+    console.log(a);
+}
+
+// Array de alunos - loop for;
+
+var alunos = ['Pedro', 'Maria', 'José', 'João', 'Carlos'];
+
+for (var b = 0; b < alunos.length; b++) {
+    console.log(alunos[b]);
+}
+
+//=> Loop (for in)
+
+var carro = {
+    'Ano': 2018,
+    'Modelo': 'Fox',
+    'Cilindradas': '1.8',
+    'Combustível': 'Gasolina'
+
+}
+
+for (var prop in carro) {
+    console.log(prop + ': ' + carro[prop]);
+}
+
+// Array loop com TagName
+
+var elementos = document.getElementsByClassName("exemplo");
+
+for (var c = 0; c < elementos.length; c++) {
+    elementos[c].style.color = "Red";
+    elementos[c].style['font-weight'] = "bold";
+}
+
+var elementos = document.getElementsByTagName("p");
+
+for (var c = 0; c < elementos.length; c++) {
+    elementos[c].style.color = "orange";
+    
+}
+
+
+
+
+
+
+
+
+
+
+
