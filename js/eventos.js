@@ -56,9 +56,11 @@ exemplo[0].innerHTML = "teste1";
 
 console.log(exemplo);
 
+//==============================================================================
+
 //=> Aula 19 - Loops são estruturas de repetição de comandos.
 
-//Loop = for
+//======= Loop => for
 
 for (var a = 0; a < 5; a++) {
     console.log(a);
@@ -72,7 +74,7 @@ for (var b = 0; b < alunos.length; b++) {
     console.log(alunos[b]);
 }
 
-//=> Loop (for in)
+//======> Loop ====== (for in)
 
 var carro = {
     'Ano': 2018,
@@ -86,7 +88,7 @@ for (var prop in carro) {
     console.log(prop + ': ' + carro[prop]);
 }
 
-// Array loop com TagName
+// Array ===== loop =====com TagName
 
 var elementos = document.getElementsByClassName("exemplo");
 
@@ -102,7 +104,7 @@ for (var c = 0; c < elementos.length; c++) {
     
 }
 
-//Loop while
+//===== Loop ==== while
 
 /*var count = 0;
 
@@ -110,7 +112,7 @@ while (count < 5) {
     console.log(count);
     count++;
 }*/
-//======================
+//=================================================
 var count2 = 10;
 
 do {
@@ -118,7 +120,7 @@ do {
     coun2++;
 } while (count2 < 5);
 
-// => Condicionais if = se / else if / else = seNão.
+// ==========> Condicionais ===== if = se / else if / else = seNão.
 
 var idade = 18;
 
@@ -130,7 +132,7 @@ if (idade < 18) {
     console.log("Maior de idade");
 }
 
-//===========================
+//================================================
 
 var nota = 8;
 var faltas = 4;
@@ -142,7 +144,7 @@ if (nota >= 7 && faltas <= 4) {
     console.log("Reprovado");
 }
 
-//===========================================
+//===============================================
 
 var nota = 6;
 var faltas = 5;
@@ -154,7 +156,7 @@ if (nota >= 7 && faltas <= 4) {
     console.log("Reprovado");
 }
 
-//===========================================
+//===============================================
 
 var nota = 8;
 var faltas = 1;
@@ -165,7 +167,7 @@ if (nota < 7 || faltas > 4) {
     console.log("Aprovado");
 }
 
-//===============================
+//===============================================
 
 var nome = "Ivan";
 
@@ -175,6 +177,66 @@ if (nome) {
     console.log("Nome não informado ");
 }
 
+//===============================================
+
+//Variavel
+var socio = false;
+var idade = 25;
+
+//se
+if (socio == true || idade >= 65) {
+    console.log("O ingresso é grátis");
+// se não
+} else {
+//  se;
+    if (idade < 18) {
+        console.log("Preço a pagar: R$ 6,00");
+//  se não;
+    } else {
+        console.log("Preço a pagar: R$ 12,00");
+    }
+
+}
+
+//------------=================----------------
+
+var socio = false;
+var idade = 70;
+
+//se
+if (socio == true || idade >= 65) {
+    console.log("O ingresso é grátis");
+// se não
+} else {
+//  se;
+    if (idade < 18) {
+        console.log("Preço a pagar: R$ 6,00");
+//  se não;
+    } else {
+        console.log("Preço a pagar: R$ 12,00");
+    }
+
+}
+
+//------------=================----------------
+
+var socio = false;
+var idade = 17;
+
+//se
+if (socio == true || idade >= 65) {
+    console.log("O ingresso é grátis");
+// se não
+} else {
+//  se;
+    if (idade < 18) {
+        console.log("Preço a pagar: R$ 6,00");
+//  se não;
+    } else {
+        console.log("Preço a pagar: R$ 12,00");
+    }
+
+}
 
 
 
