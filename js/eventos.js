@@ -118,7 +118,17 @@ do {
     coun2++;
 } while (count2 < 5);
 
+// => Condicionais if = se / else if / else = seNão.
 
+var idade = 18;
+
+if (idade < 18) {
+    console.log("Menor de idade");
+} else if (idade == 18) {
+    console.log("Tem 18 anos")
+} else {
+    console.log("Maior de idade");
+}
 
 
 
