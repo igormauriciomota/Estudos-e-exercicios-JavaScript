@@ -154,6 +154,28 @@ if (nota >= 7 && faltas <= 4) {
     console.log("Reprovado");
 }
 
+//===========================================
+
+var nota = 8;
+var faltas = 1;
+
+if (nota < 7 || faltas > 4) {
+    console.log("Reprovado");
+} else {
+    console.log("Aprovado");
+}
+
+//===============================
+
+var nome = "Ivan";
+
+if (nome) {
+    console.log("Nome: " + nome);
+} else {
+    console.log("Nome não informado ");
+}
+
+
 
 
 
