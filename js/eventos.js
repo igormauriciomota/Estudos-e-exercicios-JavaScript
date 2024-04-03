@@ -130,6 +130,29 @@ if (idade < 18) {
     console.log("Maior de idade");
 }
 
+//===========================
+
+var nota = 8;
+var faltas = 4;
+
+// So vai retornar verdadeiro se as duas condiçoes forme verdadeiras (Maior ou igual a 7)
+if (nota >= 7 && faltas <= 4) {
+    console.log("Aprovado");
+} else {
+    console.log("Reprovado");
+}
+
+//===========================================
+
+var nota = 6;
+var faltas = 5;
+
+// So vai retornar verdadeiro se as duas condiçoes forme verdadeiras (Maior ou igual a 7)
+if (nota >= 7 && faltas <= 4) {
+    console.log("Aprovado");
+} else {
+    console.log("Reprovado");
+}
 
 
 
