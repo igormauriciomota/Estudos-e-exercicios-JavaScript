@@ -34,3 +34,13 @@ document.getElementById("converter").onclick = function () {
 console.log('----------Exercicio 03 === nº 02--------');
 
 // => anos_copa
+
+var inicio = 1930;
+
+document.getElementById("anos_copa").innerHTML = "";
+
+// += armazena
+for (var a = inicio; a <= 2024; a += 4) {
+    document.getElementById("anos_copa").innerHTML += '<li>' + a + '</li>';
+}
+
