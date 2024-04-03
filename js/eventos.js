@@ -117,7 +117,7 @@ var count2 = 10;
 
 do {
     console.log(count2);
-    coun2++;
+    count2++;
 } while (count2 < 5);
 
 // ==========> Condicionais ===== if = se / else if / else = seNão.
@@ -177,31 +177,13 @@ if (nome) {
     console.log("Nome não informado ");
 }
 
-//===============================================
-
+//==============================================
+//==== Aninhamento de loops e condicionais======
+//==============================================
 //Variavel
+
 var socio = false;
 var idade = 25;
-
-//se
-if (socio == true || idade >= 65) {
-    console.log("O ingresso é grátis");
-// se não
-} else {
-//  se;
-    if (idade < 18) {
-        console.log("Preço a pagar: R$ 6,00");
-//  se não;
-    } else {
-        console.log("Preço a pagar: R$ 12,00");
-    }
-
-}
-
-//------------=================----------------
-
-var socio = false;
-var idade = 70;
 
 //se
 if (socio == true || idade >= 65) {
@@ -238,6 +220,66 @@ if (socio == true || idade >= 65) {
 
 }
 
+//------------=================----------------
+// sabendo que socio = true; pode usar => if (socio || idade >= 65)
+
+var socio = true;
+var idade = 25;
+
+//se
+if (socio || idade >= 65) {
+    console.log("O ingresso é grátis");
+// se não
+} else {
+//  se;
+    if (idade < 18) {
+        console.log("Preço a pagar: R$ 6,00");
+//  se não;
+    } else {
+        console.log("Preço a pagar: R$ 12,00");
+    }
+
+}
+
+//------------=================----------------
+
+// Aninhamento de loops e condicionais [Arrey]
+
+var funcionarios = [
+        
+    {
+        'nome': 'Carlos Henrique da Silva',
+        'idade': 45,
+        'filhos': ['Mariana Alves da Silva', 'Fernanda Alves da Silva']
+        
+    },
+
+    {
+        'nome': 'Maria Helena Pereira',
+        'idade': 32,
+        'filhos': ['João Pedro Pereira de Souza']
+        
+    },
+
+    {
+        'nome': 'José Feliciano Maia',
+        'idade': 39,
+        'filhos': ['Felipe Ferreira Maia', 'Fábio Ferreira Maia', 'João Ferreira Maia']
+        
+    }
+
+];
+
+var list_element = document.getElementById("filhos");
+
+for (var a = 0; a < funcionarios.length; a++) {
+    var lista_filhos = funcionarios[a].filhos;
+
+    for (var b = 0; b < lista_filhos.length; b++) {
+        list_element.innerHTML += '<li>' + lista_filhos[b] + ' - Filho de ' + funcionarios[a].nome + '</li>';
+    }
+}
+//=================================================
 
 
 
