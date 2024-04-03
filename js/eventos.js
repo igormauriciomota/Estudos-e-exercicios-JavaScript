@@ -102,6 +102,24 @@ for (var c = 0; c < elementos.length; c++) {
     
 }
 
+//Loop while
+
+/*var count = 0;
+
+while (count < 5) {
+    console.log(count);
+    count++;
+}*/
+//======================
+var count2 = 10;
+
+do {
+    console.log(count2);
+    coun2++;
+} while (count2 < 5);
+
+
+
 
 
 
