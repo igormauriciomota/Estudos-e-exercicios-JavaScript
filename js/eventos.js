@@ -423,6 +423,22 @@ var idade = (ano_atual - data_nascimento) / 31536000000;
 
 console.log(idade);
 
+// Hora: 3600000
+// Minuto: 60000
+
+
+//Horas
+var hora = new Date();
+hora = hora.getHours();
+
+document.getElementById("horas").innerHTML = hora;
+
+//Minutos
+var min = new Date();
+
+min = min.getMinutes();
+
+document.getElementById("minutos").innerHTML = min;
 
 
 
