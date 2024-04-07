@@ -377,6 +377,53 @@ document.getElementById("not-me").onclick = function () {
 
 }
 
+// ====----
+
+// Aula 26 - data e hora
+// (new) kiword pra criar uma class
+//var data_hoje = new Date();
+
+//console.log( data_hoje.getDate() );
+
+//var data_nascimento = "1985-04-16";
+
+//var ano_nascimento = new Date("1985-04-16").getFullYear();
+//var ano_atual = new Date().getFullYear();
+//var idade = ano_atual - ano_nascimento;
+//console.log(idade);
+
+// 1 ano mile segundos 31536000000
+//var data = new Date();
+
+//console.log(data.getTime() / 31536000000);
+
+// Data do envio mile segundos 1 dia 86400000
+
+// 20 Março de 2018 e entregue no dia 06 de Abril de 2018,
+
+var envio = new Date("2018-03-20");
+envio = envio.getTime();
+
+var entrega = new Date("2018-04-06");
+entrega = entrega.getTime();
+
+var dias = (entrega - envio) / 86400000;
+
+document.getElementById("dias_entrega").innerHTML = dias;
+
+//----Ano nascimento
+
+var data_nascimento = new Date("1985-04-16");
+data_nascimento = data_nascimento.getTime();
+
+var ano_atual = new Date("2024-06-07");
+ano_atual = ano_atual.getTime();
+
+var idade = (ano_atual - data_nascimento) / 31536000000;
+
+console.log(idade);
+
+
 
 
 
