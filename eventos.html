@@ -27,6 +27,17 @@
         padding: 10px;
         margin-top: 20px;
     }
+
+    #area2 {
+        border: 2px solid red;
+        text-align: center;
+        margin-top: 10px;
+        padding: 5px;
+        background: rgb(218, 218, 230);
+        text-align: center rgb(65, 5, 59);
+    }
+
+
     button {
         color: blueviolet;
         border-bottom: 1px solid;
@@ -198,6 +209,36 @@
                     <li>Solte os nomes aqui</li>
                 </ul>
 
+            <div id="area2">
+                <pre>
+                    <code class="javascript">
+    localStorage.removeItem("nome");
+                    </code>
+                </pre>
+
+
+                <h5>Um exemplo prático</h5>
+
+                <div id="name-field">
+
+                    <input id="nome-usuario" type="text" placeholder="Digite seu nome...">
+            
+                    &nbsp;&nbsp;
+    
+                    <button id="enviar-nome">Enviar</button>
+                    <br>
+
+                </div>
+
+
+                <p id="welcome-area" style="font-weight: bold; font-size: 18px; color: #27ae61; display: none;">
+                    <span id="welcome-text">Olá Ivan, tudo bem?</span>
+                    <br>
+                    <span id="not-me">Não é Ivan?</span>
+                </p><br><br>
+
+            </div>
+            
 
 
     <script src="js/eventos.js"></script>

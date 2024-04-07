@@ -325,6 +325,59 @@ for (var a = 0; a < funcionarios.length; a++) {
 }
 //==============--------------=====================---------================
 
+// Aula 25 -Local Storage
+
+
+//window.localStorage.setItem("nome", "João"); => Fica gravado mesmo fechando a pagina
+
+//console.log(localStorage['nome']);
+
+//localStorage.removeItem("nome"); remover o que esta gravado em -> Local Storage
+
+//console.log(localStorage['nome']);
+
+// Gravar nome e emails nas paginas (id. enviar-nome / nome-usuario / name-field / welcome-text / not-me)
+
+document.getElementById("enviar-nome").onclick = function () {
+    // guardar o nome digitado em local storage - nome-usuario.
+    var nome = document.getElementById("nome-usuario").value;
+    localStorage.setItem("nome", nome);
+
+    // esconder o formulario - name-field
+    document.getElementById("name-field").style.display = "none";
+
+    // atualizar e mostrar mensagem de boas vindas
+    document.getElementById("welcome-text").innerHTML = "Olá " + localStorage.nome + ", tudo bem?";
+    document.getElementById("not-me").innerHTML = "Não é " + localStorage.nome + "?";
+    document.getElementById("welcome-area").style.display = "initial";
+
+};
+
+if (localStorage.nome) {
+     // esconder o formulario - name-field
+    document.getElementById("name-field").style.display = "none";
+
+    // atualizar e mostrar mensagem de boas vindas
+    document.getElementById("welcome-text").innerHTML = "Olá " + localStorage.nome + ", tudo bem?";
+    document.getElementById("not-me").innerHTML = "Não é " + localStorage.nome + "?";
+    document.getElementById("welcome-area").style.display = "initial";
+
+}
+
+document.getElementById("not-me").onclick = function () {
+
+    // remover chave nome do local storage (Não é xxxx ?)
+    localStorage.removeItem("nome");
+
+    // esconder a mensagens de boas vindas (display = none " remove o elemento" )
+    document.getElementById("welcome-area").style.display = "none";
+
+    // mostrar formulario em branco
+    document.getElementById("name-field").style.display = "initial";
+
+}
+
+
 
 
 
