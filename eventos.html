@@ -93,6 +93,64 @@
     min-width: 189px;
 }
 
+ 
+.showbox {
+                padding: 5%;
+            }
+
+            .loader {
+                position: relative;
+                width: 75px;
+            }
+
+            .loader::before {
+                content: '';
+                display: block;
+                padding-top: 100%;
+            }
+
+            .circular {
+                animation: rotate 2s linear infinite;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+
+            .path {
+                stroke-dasharray: 2, 200;
+                stroke-dashoffset: 0;
+                animation: dash 1.5s ease-in-out infinite;
+                stroke-linecap: round;
+                stroke: #27ae61;
+            }
+
+            @keyframes rotate {
+            100% {
+                transform: rotate(360deg);
+            }
+            }
+
+            @keyframes dash {
+            0% {
+                stroke-dasharray: 1, 200;
+                stroke-dashoffset: 0;
+            }
+            50% {
+                stroke-dasharray: 89, 200;
+                stroke-dashoffset: -35px;
+            }
+            100% {
+                stroke-dasharray: 89, 200;
+                stroke-dashoffset: -124px;
+            }
+            }
+
+
 
 </style>
 <body>
@@ -260,9 +318,25 @@
 
             </div>
 
-            <div id="local-time">
-                <span id="horas">00</span> : <span id="minutos">00</span>
-            </div>
+                    <div id="local-time">
+                        <span id="horas">00</span> : <span id="minutos">00</span>
+                    </div>
+
+                    <p>
+                        Em outro exemplo, podemos mostrar uma animação de loader por 5 segundos:
+                    </p> 
+
+                    <button id="mostrar-loader">Mostrar</button>
+                    
+                    <div id="spinner-loader" class="spinner-loader" style="display: none">
+                        <div class="showbox">
+                            <div class="loader">
+                                <svg class="circular" viewBox="25 25 50 50">
+                                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
             
 
 

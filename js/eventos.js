@@ -440,6 +440,19 @@ min = min.getMinutes();
 
 document.getElementById("minutos").innerHTML = min;
 
+// animação de loader por 5 segundos - spinner-loader /buton mostrar-loader
+
+document.getElementById("mostrar-loader").onclick = function () {
+
+    document.getElementById("spinner-loader").style.display = "initial";
+
+    window.setTimeout(function(){
+        document.getElementById("spinner-loader").style.display = "none";
+    },5000);
+
+};
+
+
 
 
 
