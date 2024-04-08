@@ -463,8 +463,20 @@ window.setInterval(function(){
     var minutos = hora_atual.getMinutes();
     var segundos = hora_atual.getSeconds();
 
+
+    //Formatando o Time (18:1:1) para o formato correto (18:01:01) - função
+    function format_time(time) {
+        if (time >= 0 && time <= 9) {
+            var format_time = time.toString();
+            format_time = "0" + format_time;
+        } else {
+            var format_time = time.toString();
+        }
+        return format_time;
+    }
+
     // lançar no HTML as horas
-    document.getElementById("relogio").innerHTML = horas.toString() + ":" + minutos.toString() + ":" + segundos.toString();
+    document.getElementById("relogio").innerHTML = format_time(horas) + ":" + format_time(minutos) + ":" + format_time(segundos);
 
 
 },1000);
