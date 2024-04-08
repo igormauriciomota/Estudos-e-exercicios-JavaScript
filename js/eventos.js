@@ -455,14 +455,21 @@ document.getElementById("mostrar-loader").onclick = function () {
 
 //---tempo => relogio
 
-var hora_atual = new Date();
+window.setInterval(function(){
 
-var horas = hora_atual.getHours();
-var minutos = hora_atual.getMinutes();
-var segundos = hora_atual.getSeconds();
+    var hora_atual = new Date();
 
-// lançar no HTML as horas
-document.getElementById("relogio").innerHTML = horas.toString() + ":" + minutos.toString() + ":" + segundos.toString();
+    var horas = hora_atual.getHours();
+    var minutos = hora_atual.getMinutes();
+    var segundos = hora_atual.getSeconds();
+
+    // lançar no HTML as horas
+    document.getElementById("relogio").innerHTML = horas.toString() + ":" + minutos.toString() + ":" + segundos.toString();
+
+
+},1000);
+
+
 
 
 
