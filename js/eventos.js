@@ -451,7 +451,18 @@ document.getElementById("mostrar-loader").onclick = function () {
     },5000);
 
 };
+//---------------------
 
+//---tempo => relogio
+
+var hora_atual = new Date();
+
+var horas = hora_atual.getHours();
+var minutos = hora_atual.getMinutes();
+var segundos = hora_atual.getSeconds();
+
+// lançar no HTML as horas
+document.getElementById("relogio").innerHTML = horas.toString() + ":" + minutos.toString() + ":" + segundos.toString();
 
 
 

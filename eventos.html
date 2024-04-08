@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/default.css">
+        <script src="tools/indice.js"></script>
+        <script>var current_class="metodos-tempo";</script>
+        <script src="highlight/highlight.pack.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Métodos de Tempo</title>
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+
 </head>
 <style>
 
@@ -317,23 +326,40 @@
                         <p>Tempo de entrega: <strong id="dias_entrega">solte aqui (id="dias_entrega")</strong></p> 
 
             </div>
+            <!-- Data e Hora  -->
+            <div id="area2">
 
                     <div id="local-time">
                         <span id="horas">00</span> : <span id="minutos">00</span>
+
+                        <h4>Desafio: Relógio</h4>
+
+                        <p>
+                            Use os métodos do objeto Date e o método setInterval para fazer o relógio abaixo funcionar em tempo real. O id do elemento é "relogio".
+                        </p>
+
+                        <div id="relogio" style="font-size: 24px; font-weight: bold; color: white; background-color:
+                        black; border-radius: 4px; padding: 20px; display: inline-block">
+                        </div>
+
                     </div>
 
-                    <p>
-                        Em outro exemplo, podemos mostrar uma animação de loader por 5 segundos:
-                    </p> 
+            </div>
 
-                    <button id="mostrar-loader">Mostrar</button>
-                    
-                    <div id="spinner-loader" class="spinner-loader" style="display: none">
-                        <div class="showbox">
-                            <div class="loader">
-                                <svg class="circular" viewBox="25 25 50 50">
-                                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
-                                </svg>
+                    <div id="area">
+                        <p>
+                            Em outro exemplo, podemos mostrar uma animação de loader por 5 segundos:
+                        </p> 
+
+                        <button id="mostrar-loader">Mostrar</button>
+                        
+                        <div id="spinner-loader" class="spinner-loader" style="display: none">
+                            <div class="showbox">
+                                <div class="loader">
+                                    <svg class="circular" viewBox="25 25 50 50">
+                                    <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
                     </div>
