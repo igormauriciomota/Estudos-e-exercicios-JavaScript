@@ -184,7 +184,38 @@ for (a = 0; a < lista.length ; a++) {
     console.log('Tentativa: ' + a);
 }
 
+// comando continue pula o valor selecionado  ex 0 1 4 5 pula o 3
 console.log('Exercicio-04--"continue"-----');
+
+var num = 0;
+
+while (num < 20) {
+
+    if (num == 3) {
+        num++;
+        continue;
+    }
+
+    console.log(num);
+    num++;
+
+}
+
+console.log('Exercicio-05--"continue"--numero Impar---');
+
+var num = 0;
+
+while (num < 20) {
+    num++;
+ // modulo e o simbolo de porcentagem %.
+    if (num % 2 == 0) {
+        continue
+    }
+
+    console.log(num);
+
+
+}
 
 
 

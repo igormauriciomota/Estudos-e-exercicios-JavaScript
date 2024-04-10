@@ -534,3 +534,5 @@ console.log(valor_pedagio (categoria_veiculo));
 
 
 
+
+
