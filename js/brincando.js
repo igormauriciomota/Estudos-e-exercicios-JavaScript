@@ -142,6 +142,49 @@ function sair() {
     a.style.background = 'green'
 }*/
 
+//   Os comandos "break" e "continue" agem sobre a execução de um
+// bloco de código e são usados principalmente com loops.
+
+// Aula 29 -  "break" e "continue"
+
+
+console.log('Exercicio-01--------');
+
+var x = 0;
+
+while (x < 10) {
+    console.log(x);
+    x++;
+
+    if (x==5) {
+        break;
+    }
+}
+
+console.log('Exercicio-02--------');
+
+var lista = [1,5,9,33,56,89,100,122,145,189,190,199,205,290];
+
+for (a = 0; a < lista.length ; a++) {
+    if (lista[a] == 33) {
+        console.log('valor encontrado');
+    }
+    console.log('Tentativa: ' + a);
+}
+
+console.log('Exercicio-03---break-interrompe o ciclo----');
+
+var lista = [1,5,9,33,56,89,100,122,145,189,190,199,205,290];
+
+for (a = 0; a < lista.length ; a++) {
+    if (lista[a] == 33) {
+        console.log('valor encontrado');
+        break;
+    }
+    console.log('Tentativa: ' + a);
+}
+
+console.log('Exercicio-04--"continue"-----');
 
 
 
