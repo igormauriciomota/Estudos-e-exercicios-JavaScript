@@ -503,6 +503,9 @@ function valor_pedagio (categoria) {
             return 33.65;
             break;
 
+        default:
+            return 'categoria não encontrada';
+
     }
 
 }
