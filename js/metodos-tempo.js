@@ -9,3 +9,5 @@ console.log('Mensagem 1');
 window.setTimeout(function(){
     console.log('Mensagem 2');
 },3000);
+
+// -- 
