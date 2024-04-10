@@ -9,7 +9,7 @@ document.getElementById("mostrar_opcao").onclick = function () {
 
 };
 
-//---------------------------------------------------
+//------------------Mostra os valores---------------------------------
 
 document.getElementById("mostrar_opcao1").onclick = function () {
 
@@ -24,3 +24,23 @@ document.getElementById("mostrar_opcao1").onclick = function () {
 };
 
  //------------------------------------------------
+
+ // Radio Buttons - radio / genero / Masculino / Feminino
+
+document.getElementById("mostrar_radio").onclick = function () {
+
+    // Obs: neme"genero" em todos e usado para maarcar um de cada vez
+    var radio = document.getElementsByName("genero");
+
+    var radio_selected;
+
+    for (var a = 0; a < radio.length; a++) {
+        if (radio[a].checked) {
+            radio_selected = radio[a].value;
+            break;
+        }
+    }
+
+    document.getElementById("radio_selecionado").innerHTML = radio_selected;
+
+};
