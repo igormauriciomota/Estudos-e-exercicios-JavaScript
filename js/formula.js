@@ -85,3 +85,24 @@ document.getElementById("escolaridade").onchange = function () {
     document.getElementById("escolaridade_selecionada").innerHTML = valor_selecionado;
 
 };
+
+
+// O elemento onChange check Box
+
+var check = document.getElementsByName("lanche2");
+
+    for (var a = 0;  a < check.length; a++) {
+
+        check[a].onchange = function () {
+
+            document.getElementById("check_selecionado2").innerHTML = "";
+            
+            for (var b = 0;  b < check.length; b++) {
+                
+                if (check[b].checked) {
+                    document.getElementById("check_selecionado2").innerHTML += '<li>' + check[b].value + '</li>';
+                }
+            }
+        }
+    }
+

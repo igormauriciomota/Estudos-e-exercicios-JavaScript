@@ -170,6 +170,35 @@
 
         </div>
 
+        <!-- O evento onchange / check box -->
+
+        <div id="area2">
+
+            <p>
+                Os outros campos também permitem o uso deste evento, só é preciso tomar cuidado na identificação de que elemento 
+                sofrerá mudança. No caso do select box, é o elemento &lt;select&gt;, que possui todos os itens, que sofre a mudança. Mas no caso dos 
+                radio buttons ou checkboxes, cada um dos itens sofrerá mudança, portanto precisamos monitorar o evento em cada um deles
+                através de um loop:
+            </p>
+
+
+
+            <form>
+                Selecione os itens do pedido: <br>
+                <input type="checkbox" name="lanche2" value="Hamburguer"> Hamburguer<br>
+                <input type="checkbox" name="lanche2" value="Batata Frita"> Batata Frita<br>
+                <input type="checkbox" name="lanche2" value="Refrigerante"> Refrigerante<br>
+                
+            </form>
+
+            <br>
+
+            <p>Solte aqui as opções selecionadas: <strong id="check_selecionado2"></strong></p>
+
+            <br>
+
+        </div>
+
 
 
 
