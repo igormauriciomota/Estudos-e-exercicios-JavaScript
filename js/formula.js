@@ -74,3 +74,14 @@ document.getElementById("mostrar_data").onclick = function () {
     document.getElementById("data_selecionada").innerHTML = data_completa;
 
 };
+
+// AULA 31 - O elemento onChange
+
+document.getElementById("escolaridade").onchange = function () {
+
+    var campo_select = document.getElementById("escolaridade");
+    var indice_selecionado = campo_select.options.selectedIndex;
+    var valor_selecionado = campo_select.options[indice_selecionado].innerHTML;
+    document.getElementById("escolaridade_selecionada").innerHTML = valor_selecionado;
+
+};
