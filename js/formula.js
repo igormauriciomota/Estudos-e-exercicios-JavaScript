@@ -62,3 +62,15 @@ document.getElementById("mostrar_check").onclick = function () {
 
 
 };
+
+//-----------------------
+// Data evento
+
+document.getElementById("mostrar_data").onclick = function () {
+
+    // lemento HTML do tipo <input> é usado para criar controles interativos para formulários.
+    var data_select = document.getElementById("data_evento").value;
+    var data_completa = new Date(data_select);
+    document.getElementById("data_selecionada").innerHTML = data_completa;
+
+};
