@@ -54,9 +54,16 @@ document.getElementById("confirmar_pedido").onclick = function() {
 }
 
 // ex 03 ----------------------------------------------
+// 0 zerar ao chegar ao 10
+function add_left_zero1(number) {
+    if (number < 10) {
+        return "0" + number.toString();
+    } else {
+        return number.toString();
+    }
+}
 
-
-var iniciado = false, hora_inicio, hora_atual, tempo_passado, init_cronometro;
+var iniciado = false, hora_inicio, hora_atual, tempo_passado, init_cronometro, horas, minutos, segundos, milisegundos;
 
 document.getElementById("comecar_parar").onclick = function() {
 
@@ -78,7 +85,23 @@ document.getElementById("comecar_parar").onclick = function() {
             hora_atual = new Date().getTime();
             tempo_passado = hora_atual - hora_inicio;
 
-            document.getElementById("cronometro").innerHTML = tempo_passado;
+            //Horas
+            horas = Math.floor(tempo_passado / 3600000);
+            resto = tempo_passado - (horas * 3600000);
+
+            //Minutos
+            minutos = Math.floor(resto / 60000);
+            resto -= (minutos * 60000);
+
+            //Segundos
+            segundos = Math.floor(resto / 1000);
+            resto -= (segundos * 1000);
+
+            milisegundos = resto;
+
+
+
+            document.getElementById("cronometro").innerHTML = add_left_zero1(horas) + ':' + add_left_zero1(minutos) + ':' + add_left_zero1(segundos) + ':' + add_left_zero1(milisegundos);
 
         }, 10);
 
@@ -94,32 +117,8 @@ document.getElementById("comecar_parar").onclick = function() {
 document.getElementById("zerar").onclick = function() {
     tempo_passado = 0;
     hora_inicio = new Date().getTime();
-    document.getElementById("cronometro").innerHTML = tempo_passado;
+    document.getElementById("cronometro").innerHTML = "00:00:00 000";
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // ex 04 ----------------------------------------------
