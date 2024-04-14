@@ -53,7 +53,71 @@ document.getElementById("confirmar_pedido").onclick = function() {
 
 }
 
-// ex 03------------------------
+// ex 03 ----------------------------------------------
+
+
+var iniciado = false, hora_inicio, hora_atual, tempo_passado, init_cronometro;
+
+document.getElementById("comecar_parar").onclick = function() {
+
+    if (!iniciado) {
+        iniciado = true;
+        document.getElementById("comecar_parar").innerHTML = "Parar";
+
+        //começar o cronometro
+        if (!hora_inicio) {
+            hora_inicio = new Date().getTime();
+        } else {
+            hora_inicio = new Date().getTime() - tempo_passado;
+        }
+
+        
+
+        init_cronometro = window.setInterval(function() {
+
+            hora_atual = new Date().getTime();
+            tempo_passado = hora_atual - hora_inicio;
+
+            document.getElementById("cronometro").innerHTML = tempo_passado;
+
+        }, 10);
+
+    } else {
+        window.clearInterval(init_cronometro);
+        iniciado = false;
+        document.getElementById("comecar_parar").innerHTML = "Começar";
+    }
+
+}
+
+// Zerar o cronometro
+document.getElementById("zerar").onclick = function() {
+    tempo_passado = 0;
+    hora_inicio = new Date().getTime();
+    document.getElementById("cronometro").innerHTML = tempo_passado;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
