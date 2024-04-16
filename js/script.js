@@ -441,3 +441,20 @@ function eventoClick() {
     //alert('Adicinou um evento de Click');
     document.body.style.backgroundColor = "yellow";
 }
+
+//============================================================== JQuery
+
+// Aula 34 - jQuery - Sintaxe
+// em JS => document.getElementById("exemplo").innerHTML = "Olá";
+// ex: quando for urar os elementos => $("div").ação(); - $("p").ação();
+// ex: class(.) ou id(#) => $("#exemplo").ação();
+//ex: .ação(); = .html("olá"); = .css("");
+
+//$("#exemplo").html("Olá");
+
+$("#esconder").click(function(){
+    $(".exemplo").css("display","none");
+});
+
+//==============================================================
+
