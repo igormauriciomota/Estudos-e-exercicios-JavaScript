@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="css/default.css">
+    <script src="tools/indice.js"></script>
+    <script>var current_class="jquery-manip-html";</script>
+    <script src="highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery - Manipulação do conteúdo HTML</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<style>
+    .exemplo, #esconder {
+
+        
+        color: white;
+        font-size: 18px;
+        padding: 10px 15px;
+        display: inline-block;
+    }
+
+    .exemplo {
+        background-color: #1096D5;
+    }
+
+    #esconder {
+        background-color: #27ae61;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    #esconder:hover {
+        background-color: #034732;
+        transition: 1s;
+    }
+
+</style>
+
+<body>
+
+    <div class="page-container">
+        <header>
+            <div class="logo-area">
+                <img src="img/logo_js.png" alt="logo javascript">
+            </div>
+            <div class="course-title">
+                <h1>Aprenda javascript com facilidade do zero</h1>
+                <h2>Prof. Ivan Lourenço Gomes</h2>
+            </div>
+        </header>
+
+        <main>
+
+            <h3>jQuery - Sintaxe</h3>
+
+            <h4>Selecionando elementos</h4>
+
+                    <p>
+                        Para identificar os elementos usamos seletores, como em CSS. Portanto elementos da classe <i>exemplo</i>, serão identificados com ponto: 
+                        ".exemplo". Enquanto um elemento com o id <i>exemplo</i> será identificado pela hashtag: ("#exemplo"). As tags podem ser selecionadas 
+                        diretamente: ("h1"), ("p"), etc.
+
+                    </p>
+
+                    <p>
+                        As ações são métodos jQuery, que vamos começar a aprender a partir de agora. Vamos começar com um exemplo simples, 
+                        esconder todos os elementos que tenham a classe "exemplo" ao clicar no botão que tem id "esconder".
+                    </p>
+
+                    <div class="exemplo">1</div>
+                    <div class="exemplo">2</div>
+                    <div class="exemplo">3</div>
+                    <div id="esconder">Esconder</div>
+
+                    <p>===============================================================================================================</p><br>
+
+                    <h3>jQuery - Manipulação do conteúdo HTML</h3>
+
+                    <p>
+                        Vamos agora nos aprofundar um pouco mais nos métodos jQuery para manipular o conteúdo HTML.
+                    </p>
+    
+                    <h4>.html()</h4>
+    
+                    <p>O método html é equivalente à propriedade innerHTML que usamos nas seções anteriores do curso. Ele serve tanto para 
+                        pegar o conteúdo html de um elemento, quanto para defini-lo.
+                    </p><br>
+    
+        
+                    <p id="paragrafo-html" style="font-size: 20px; color: green">
+                        Use este <i><b>parágrafo</b></i> para testar o método html.
+                    </p>
+
+                    <h4>.text()</h4>
+
+                    <p>
+                        O método text é semelhante ao método html, mas ele pega apenas o conteúdo em texto do elemento, ignorando as tags html.
+                </p><br>
+
+                <p>===============================================================================================================</p><br>
+
+
+        </main>
+
+    </div>
+
+    <script src="js/jquery.js"></script>
+
+</body>
+
+</html>
