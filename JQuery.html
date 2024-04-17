@@ -94,13 +94,118 @@
         
                     <p id="paragrafo-html" style="font-size: 20px; color: green">
                         Use este <i><b>parágrafo</b></i> para testar o método html.
-                    </p>
+                    </p><br>
 
+                    <p>===============================================================================================================</p><br>
+                    
                     <h4>.text()</h4>
 
                     <p>
                         O método text é semelhante ao método html, mas ele pega apenas o conteúdo em texto do elemento, ignorando as tags html.
                 </p><br>
+
+                <pre>
+                    <code class="javascript">
+
+    var conteudo_texto = $("#paragrafo-text").text();
+    console.log(conteudo_texto);
+                        
+                    </code>
+                </pre>
+
+                <p id="paragrafo-text" style="font-size: 20px; color: blue">
+                    Use este <i><b>parágrafo</b></i> para testar o método text.
+                </p><br>
+
+                <p>===============================================================================================================</p><br>
+
+                <h4>.attr()</h4>
+
+                <p>
+                    O método attr é usado para manipular os atributos html, como "src", "href", "target", etc.
+                </p>
+
+                <p>
+                    Trabalhe com a url <a id="paragrafo-link" href="http://www.google.com">deste link</a>. 
+                </p>
+
+                <pre>
+                    <code class="javascript">
+    
+    // Pegar o valor atual do href:
+
+    var url_link = $("#paragrafo-link").attr("href");
+    console.log(url_link);
+
+                    </code>
+                </pre>
+
+                <pre>
+                    <code class="javascript">
+    
+    // Trocar o valor do href:
+
+    $("#paragrafo-link").attr("href", "http://www.udemy.com");
+    url_link = $("#paragrafo-link").attr("href");
+    console.log(url_link);
+
+                    </code>
+                </pre>
+
+                <p>
+                    Vamos agora trocar o src de uma imagem ao clicar em um botão:
+                </p>
+
+                <img style="width: 180px; height: auto;" src="https://static.memrise.com/img/400sqf/from/uploads/course_photos/3146044000171223183557.png" alt="js" id="imagem_js">
+
+                <button id="mudar_imagem" style="display: block; margin-top: 12px;">Mudar imagem</button>
+
+                <pre>
+                    <code class="javascript">
+
+    $("#mudar_imagem").click(function(){
+        $("#imagem_js").attr("src", "https://cdn.tutsplus.com/net/uploads/2013/12/managing-async-nodejs-retina-preview.png");
+        $("#mudar_imagem").hide();
+    });
+
+                    </code>
+                </pre><br>
+
+                <p>===============================================================================================================</p><br>
+
+                <h4>.empty() e .remove()</h4>
+
+                <p>
+                    Para apagar todo o conteúdo de um elemento, poderíamos definir um string vazio com o método html:
+                </p>
+
+                <pre>
+                    <code class="javascript">
+
+    $("#paragrafo-empty").html("");
+
+                    </code>
+                </pre>
+
+                <p id="paragrafo-empty" style="background-color: black; width: 100%; height: 30px; line-height: 30px; font-size: 20px; color: yellow">
+                    Use este <i><b>parágrafo</b></i> para testar os métodos empty e remove.
+                </p>
+
+                <p>
+                    Porém, existem outras maneiras de fazer, com os métodos empty e remove. O primeiro apaga apenas o conteúdo do elemento enquanto 
+                    o segundo remove o elemento. 
+                </p>
+
+                <pre>
+                    <code class="javascript">
+    // Remover o conteúdo, mantendo o elemento:
+    $("#paragrafo-empty").empty();
+
+    // Remover o elemento:
+    $("#paragrafo-empty").remove();
+
+                    </code>
+                    </pre>
 
                 <p>===============================================================================================================</p><br>
 
