@@ -26,4 +26,13 @@ console.log(conteudo_html);
 
 //----------------------------------------------------
 
+//Mudando o link de um navegador com Jquery-attr
+
+var url_link = $("#paragrafo-link").attr("href");
+console.log(url_link);
+
+$("#paragrafo-link").attr("href","https://portfolio.mindshift.top/");
+
+url_link = $("#paragrafo-link").attr("href");
+console.log(url_link);
 
