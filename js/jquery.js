@@ -26,7 +26,7 @@ console.log(conteudo_html);
 
 //----------------------------------------------------
 
-//Mudando o link de um navegador com Jquery-attr
+//Mudando o link de um navegador com Jquery-attr-> manipular os atributos html, como "src", "href", "target", etc.
 
 var url_link = $("#paragrafo-link").attr("href");
 console.log(url_link);
