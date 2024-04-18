@@ -36,3 +36,14 @@ $("#paragrafo-link").attr("href","https://portfolio.mindshift.top/");
 url_link = $("#paragrafo-link").attr("href");
 console.log(url_link);
 
+//--------------------------------------------------
+
+//Mudar Imagem e sumir o botão
+
+$("#mudar_imagem").click(function(){
+    $("#imagem_js").attr("src", "https://cdn.tutsplus.com/net/uploads/2013/12/managing-async-nodejs-retina-preview.png");
+    $("#mudar_imagem").hide();
+});
+
+//------------------------------------------------
+
