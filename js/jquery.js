@@ -47,3 +47,7 @@ $("#mudar_imagem").click(function(){
 
 //------------------------------------------------
 
+$("#paragrafo-empty").empty();
+
+$("#paragrafo-empty1").remove();
+
