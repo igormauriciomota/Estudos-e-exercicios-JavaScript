@@ -51,3 +51,29 @@ $("#paragrafo-empty").empty();
 
 $("#paragrafo-empty1").remove();
 
+//----------------------------------------------
+
+//---------Aula - 36- JQuery - Loop--Each----------
+console.log("---Aula-36---JQuery--Arrey--");
+
+var lista = ["HTML","CSS","Javascript", "jQuery", "PHP"];
+
+$.each(lista,function(indice,valor){
+    console.log('O elemento de indice [' + indice +'] tem o valor de: ' + valor);
+});
+
+//------------------------------------------------------
+console.log("---Aula-36---JQuery--Objetos--");
+
+//--Objeto js
+var pessoa = {
+    'nome': 'João Pedro',
+    'DN': '20/01/1990',
+    'CPF': '111.111.111-11'
+};
+
+$.each(pessoa, function( chave, valor ) {
+    console.log('O elemento de chave [' + chave + '] tem o valor de ' + valor);
+});
+
+
