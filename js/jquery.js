@@ -76,4 +76,16 @@ $.each(pessoa, function( chave, valor ) {
     console.log('O elemento de chave [' + chave + '] tem o valor de ' + valor);
 });
 
+//------------------------------------------------------
+
+console.log("---Percorrendo um array de elementos HTML---");
+
+var interesses = $("#interesses li");
+
+$.each(interesses, function( chave, valor ) {
+    console.log($(valor).text());
+});
+
+
+
 
