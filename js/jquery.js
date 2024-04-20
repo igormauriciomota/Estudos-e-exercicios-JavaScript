@@ -98,6 +98,7 @@ console.log(conteudo_input);
 //console.log($('#options').val() );
 
 //console.log($('#options').find(":selected").text() );
+//Genero M - F - Radio Buttons
 
 $("#options").change(function(){
     var novo_selecionado = $('#options').find(":selected").text();
@@ -124,6 +125,43 @@ $("input[name='interesse']").change(function() {
     console.log(textos);
     
 });
+
+//---Mudar a cor---com JQuery
+
+$(".item-1").css("background-color", "#f9f9",);
+
+$(".item-2").css("background-color", "#ffb0e9");
+
+$(".item-3").css("background-color", "#e2e2e2");
+
+$(".item-4").css("background-color", "#0a7395");
+
+$(".item-5").css("background-color", "#06dec2");
+
+$(".item-6").css("background-color", "#1a5fb6");
+
+$(".item-7").css("background-color", "#908279");
+
+
+$(".item-1").css("text-align", "justify",);
+
+$(".item-2").css("text-align", "center",);
+
+$(".item-3").css("text-align", "left",);
+
+$(".item-4").css("text-align", "start",);
+
+$(".item-5").css("text-align", "justify-all",);
+
+$(".item-6").css("text-align", "start",);
+
+$(".item-7").css("text-align", "justify-all",);
+
+
+
+
+
+
 
 
 
