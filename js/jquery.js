@@ -86,6 +86,47 @@ $.each(interesses, function( chave, valor ) {
     console.log($(valor).text());
 });
 
+//---FORMULARIO----AULA 37-JQuery---
+
+console.log("-aula-37--formulario--");
+
+var conteudo_input = $("#campo_nome").val();
+console.log(conteudo_input);
+
+//-------------------------------------
+
+//console.log($('#options').val() );
+
+//console.log($('#options').find(":selected").text() );
+
+$("#options").change(function(){
+    var novo_selecionado = $('#options').find(":selected").text();
+    console.log(novo_selecionado);
+});
+
+$("input[name='genero']:checked").val();
+
+$("input[name='genero']:checked").parent('span').text();
+
+//--------------------------------------------------
+
+$("input[name='interesse']").change(function() {
+
+    var checkboxes_selecionados = $("input[name='interesse']:checked");
+    var textos = [];
+    
+    $.each(checkboxes_selecionados, function( index, value ) {
+        
+        textos.push($(value).parent("span").text());
+    
+    });
+    
+    console.log(textos);
+    
+});
+
+
+
 
 
 

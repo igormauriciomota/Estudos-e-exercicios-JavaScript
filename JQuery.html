@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <script src="js/jquery-3.7.1.min.js"></script>
-    <link rel="stylesheet" href="css/default.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>jQuery - Manipulação do conteúdo HTML</title>
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-</head>
+    <head>
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <link rel="stylesheet" href="css/default.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>jQuery - Manipulação do conteúdo HTML</title>
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
 <style>
     .exemplo, #esconder {
 
@@ -37,7 +37,7 @@
 
 </style>
 
-<body>
+    <body>
 
     <div class="page-container">
         <header>
@@ -92,22 +92,13 @@
                         Use este <i><b>parágrafo</b></i> para testar o método html.
                     </p><br>
 
-                    <p>================================================================================================</p><br>
+                <p>================================================================================================</p><br>
                     
                     <h4>.text()</h4>
 
                     <p>
                         O método text é semelhante ao método html, mas ele pega apenas o conteúdo em texto do elemento, ignorando as tags html.
                 </p><br>
-
-                <pre>
-                    <code class="javascript">
-
-    var conteudo_texto = $("#paragrafo-text").text();
-    console.log(conteudo_texto);
-                        
-                    </code>
-                </pre>
 
                 <p id="paragrafo-text" style="font-size: 20px; color: blue">
                     Use este <i><b>parágrafo</b></i> para testar o método text.
@@ -125,47 +116,13 @@
                     Trabalhe com a url <a id="paragrafo-link" href="http://www.google.com">Portifolio</a>. 
                 </p>
 
-                <pre>
-                    <code class="javascript">
-    
-    // Pegar o valor atual do href:
-
-    var url_link = $("#paragrafo-link").attr("href");
-    console.log(url_link);
-
-                    </code>
-                </pre>
-
-                <pre>
-                    <code class="javascript">
-    
-    // Trocar o valor do href:
-
-    $("#paragrafo-link").attr("href", "https://portfolio.mindshift.top");
-    url_link = $("#paragrafo-link").attr("href");
-    console.log(url_link);
-
-                    </code>
-                </pre>
-
                 <p>
                     Vamos agora trocar o src de uma imagem ao clicar em um botão:
                 </p>
 
                 <img style="width: 180px; height: auto;" src="https://static.memrise.com/img/400sqf/from/uploads/course_photos/3146044000171223183557.png" alt="js" id="imagem_js">
 
-                <button id="mudar_imagem" style="display: block; margin-top: 12px;">Mudar imagem</button>
-
-                <pre>
-                    <code class="javascript">
-
-    $("#mudar_imagem").click(function(){
-        $("#imagem_js").attr("src", "https://cdn.tutsplus.com/net/uploads/2013/12/managing-async-nodejs-retina-preview.png");
-        $("#mudar_imagem").hide();
-    });
-
-                    </code>
-                </pre><br>
+                <button id="mudar_imagem" style="display: block; margin-top: 12px;">Mudar imagem</button><br>
 
                 <p>=====================================================================================================</p><br>
 
@@ -178,7 +135,7 @@
                 <pre>
                     <code class="javascript">
 
-    $("#paragrafo-empty").html("");
+                $("#paragrafo-empty").html("");
 
                     </code>
                 </pre>
@@ -191,17 +148,6 @@
                     Porém, existem outras maneiras de fazer, com os métodos empty e remove. O primeiro apaga apenas o conteúdo do elemento enquanto 
                     o segundo remove o elemento. 
                 </p>
-
-                <pre>
-                    <code class="javascript">
-    // Remover o conteúdo, mantendo o elemento:
-    $("#paragrafo-empty").empty();
-
-    // Remover o elemento:
-    $("#paragrafo-empty").remove();
-
-                    </code>
-                    </pre>
 
                 <p>====================================================================================================</p><br>
 
@@ -248,7 +194,99 @@
 
                 <p>=====================================================================================================</p><br>
 
+                <h4>.val()</h4>
 
+                <p>O método val é utilizado para pegar os definir valores de campos de formulário.
+                </p>
+
+                <p style="margin-bottom: 5px">Nome:</p>
+                <input id="campo_nome" type="text" value="Ivan Gomes" style="margin: 0">
+                <br><br>
+
+                <h4>Trabalhando com outros tipos de campos de formulário</h4>
+
+                <h5>Select Box</h5>
+
+                <form>
+                    <select id="options">
+                        <option value="opt1">Praia</option>
+                        <option value="opt2">Montanha</option>
+                        <option value="opt3">Cidade</option>
+                    </select>
+                </form>
+
+                <p>
+                    Para pegar o valor da opção selecionada em select box, podemos usar o método val(), que retorna o valor do atributo value da opção selecionada.
+                </p>
+
+                <p>
+                    Para conseguir pegar o texto dentro da opção, não podemos usar o método text() ou html() pois isto retorna todas as opções que estão no select, 
+                    e não apenas a opção selecionada. Mas isto pode ser resolvido com o método find(), que serve para procurar algo dentro de algum elemento.
+                </p>
+
+                <p>
+                    Neste caso, vamos procurar dentro da select box pelo elemento que esteja com o atributo <i>selected</i>, e então vamos usar o método text() para 
+                    pegar o texto desta opção.
+                </p>
+
+                <p>
+                    Agora podemos atualizar o valor selecionado sempre que a opção for alterada usando o método change.
+                </p>
+
+                <h5>Radio Buttons</h5>
+
+                <form>
+
+                    <span><input type="radio" name="genero" value="M" checked> Masculino</span><br>
+                    <span><input type="radio" name="genero" value="F"> Feminino</span><br>
+                    <span><input type="radio" name="genero" value="NONE"> Prefiro não dizer</span>
+                    
+                </form>
+
+                <p>
+                    A forma de pegar o valor do radio button selecionado é parecida com a do select box. A diferença é que neste caso, as opções 
+                    que fazem parte deste conjunto de radio buttons tem o atributo name="genero", portanto buscamos o elemento desta maneira para 
+                    pegar o value da opção selecionada:
+                </p>
+
+                <p>
+                    Para pegar o texto da opção selecionada é um pouco mais complicado, porque o campo do tipo rádio não tem conteúdo. Mas podemos 
+                    resolver isso com um elemento por fora da opção, neste caso um &lt;span&gt;.
+                </p>
+
+                <pre>
+                    <code class="html">
+
+                &lt;span&gt;&lt;input type="radio" name="genero" value="M" checked&gt; Masculino&lt;/span&gt;&lt;br&gt;
+                &lt;span&gt;&lt;input type="radio" name="genero" value="F"&gt; Feminino&lt;/span&gt;&lt;br&gt;
+                &lt;span&gt;&lt;input type="radio" name="genero" value="NONE"&gt; Prefiro não dizer&lt;/span&gt;
+
+
+                    </code>
+                </pre>
+                
+                <p>
+                    Com isso, basta procurar o elemento selecionado e depois selecionar o elemento pai com o método parent() e pegar o seu texto.
+                </p>
+
+                <p>
+                    Agora podemos atualizar sempre que a opção for alterada:
+                </p>
+
+                <h5>CheckBoxes</h5>
+
+                <form>
+
+                    <span><input type="checkbox" name="interesse" value="DFE"> Desenvolvimento Front-End</span><br>
+                    <span><input type="checkbox" name="interesse" value="DBE"> Desenvolvimento Back-End</span><br>
+                    <span><input type="checkbox" name="interesse" value="Design"> Design</span>
+                    
+                </form>
+
+                <p>
+                    A forma de pegar os valor selecionados de checkboxes é parecida com a dos radio buttons. Mas vamos lembrar que no caso dos checkboxes, 
+                    várias opções podem ser selecionadas ao mesmo tempo, portando temos que trabalhar com um array. 
+                </p>
 
 
 
@@ -258,8 +296,8 @@
 
     </div>
 
-    <script src="js/jquery.js"></script>
+        <script src="js/jquery.js"></script>
 
-</body>
+    </body>
 
 </html>
