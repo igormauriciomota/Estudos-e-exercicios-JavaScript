@@ -170,6 +170,9 @@ $("#remover_classe").click(function(){
 });
 
 // Metodo => toggleClass()
+$("#alternar_classe").click(function(){
+    $("#paragrafo-classes").toggleClass("styling");
+});
 
 
 
