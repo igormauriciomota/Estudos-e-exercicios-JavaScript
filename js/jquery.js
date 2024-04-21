@@ -157,6 +157,12 @@ $(".item-6").css("text-align", "start",);
 
 $(".item-7").css("text-align", "justify-all",);
 
+//------
+
+$("#adicionar_classe").click(function(){
+    $("#paragrafo-classes").addClass("styling");
+});
+
 
 
 
