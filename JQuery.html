@@ -236,7 +236,7 @@
                     Agora podemos atualizar o valor selecionado sempre que a opção for alterada usando o método change.
                 </p>
             </pre>
-                
+
             <pre class="item-7">
 
                 <h5>Radio Buttons</h5>
@@ -250,13 +250,16 @@
                 </form>
 
                 <p>
-                    A forma de pegar o valor do radio button selecionado é parecida com a do select box. A diferença é que neste caso, as opções 
-                    que fazem parte deste conjunto de radio buttons tem o atributo name="genero", portanto buscamos o elemento desta maneira para 
+                    A forma de pegar o valor do radio button selecionado é parecida com a do select box.
+                    A diferença é que neste caso, as opções
+                    que fazem parte deste conjunto de radio buttons tem o atributo name="genero", portanto
+                    buscamos o elemento desta maneira para
                     pegar o value da opção selecionada:
                 </p>
 
                 <p>
-                    Para pegar o texto da opção selecionada é um pouco mais complicado, porque o campo do tipo rádio não tem conteúdo. Mas podemos 
+                    Para pegar o texto da opção selecionada é um pouco mais complicado, porque o campo do
+                    tipo rádio não tem conteúdo. Mas podemos
                     resolver isso com um elemento por fora da opção, neste caso um &lt;span&gt;.
                 </p>
 
@@ -299,6 +302,25 @@
                     várias opções podem ser selecionadas ao mesmo tempo, portando temos que trabalhar com um array. 
                 </p>
 
+            </pre><br>
+            <pre class="item-7">
+                <h4>
+                    addClass(), removeClass(), toggleClass()
+                </h4>
+
+                <p>
+                    O método css funciona bem quando são poucas as propriedades que queremos alterar, porém quando a complexidade dos estilos 
+                    aumenta, é melhor trabalhar diretamente com classes, especialmente porque desta maneira conseguimos alternar os estilos. 
+                    Vamos mudar completamente a apresentação do parágrafo abaixo usando uma classe.
+                </p>
+
+                <p class="normal" id="paragrafo-classes">
+                    Este parágrafo tem a classe "normal". Vamos adicionar a ele a classe "styling" e ver o que acontece.
+                </p>
+
+                <button id="adicionar_classe">Adicionar Classe</button>
+                <button id="remover_classe">Remover Classe</button>
+                <button id="alternar_classe">Alternar Classe</button>
             </pre>
 
 
