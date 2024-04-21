@@ -1,3 +1,6 @@
+//Inicia o JQuery no JS para evitar travamento./ $(function(){ codigos }); / $(document).ready(function(){ codigos });
+$(function() {
+
 // Aula 34 - jQuery - Sintaxe
 // em JS => document.getElementById("exemplo").innerHTML = "Olá";
 // ex: quando for urar os elementos => $("div").ação(); - $("p").ação();
@@ -174,6 +177,7 @@ $("#alternar_classe").click(function(){
     $("#paragrafo-classes").toggleClass("styling");
 });
 
+//---Aula -39--JQuery --Eventos
 
 
 
@@ -184,3 +188,7 @@ $("#alternar_classe").click(function(){
 
 
 
+
+
+
+});
