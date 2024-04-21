@@ -157,12 +157,19 @@ $(".item-6").css("text-align", "start",);
 
 $(".item-7").css("text-align", "justify-all",);
 
-//------
+//--Aula -38--JQuery --Manipulação de css -  addClass(), removeClass(), toggleClass()
 
+//  Metodo => addClass()
 $("#adicionar_classe").click(function(){
     $("#paragrafo-classes").addClass("styling");
 });
 
+//  Metodo => removeClass()
+$("#remover_classe").click(function(){
+    $("#paragrafo-classes").removeClass("styling");
+});
+
+// Metodo => toggleClass()
 
 
 
