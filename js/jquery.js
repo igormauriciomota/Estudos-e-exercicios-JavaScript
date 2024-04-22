@@ -177,11 +177,29 @@ $("#alternar_classe").click(function(){
     $("#paragrafo-classes").toggleClass("styling");
 });
 
-//---Aula -39--JQuery --Eventos
+//---Aula -39--JQuery --Eventos 
 
+$("#nome").change(function(){
+    var conteudo = $("#nome").val();
 
+    if (conteudo) {
+        $("#confirmar").css("display", "initial");
+    } else {
+        $("#confirmar").css("display", "none");
+    }
+});
 
+//---Aula -39--JQuery --Eventos 1
 
+$("#nome1").keyup(function(){
+    var conteudo = $("#nome1").val();
+
+    if (conteudo) {
+        $("#confirmar1").css("display", "initial");
+    } else {
+        $("#confirmar1").css("display", "none");
+    }
+});
 
 
 
