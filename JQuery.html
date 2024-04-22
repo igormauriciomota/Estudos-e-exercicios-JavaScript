@@ -11,46 +11,85 @@
         <link rel="stylesheet" type="text/css" href="css/styles.css">
     </head>
 <style>
-    .exemplo, #esconder {
+.exemplo, #esconder {
 
-        
-        color: white;
-        font-size: 18px;
-        padding: 10px 15px;
-        display: inline-block;
-    }
 
-    .exemplo {
-        background-color: #1096D5;
-    }
+color: white;
+font-size: 18px;
+padding: 10px 15px;
+display: inline-block;
+}
 
-    #esconder {
-        background-color: #27ae61;
-        cursor: pointer;
-        transition: 1s;
-    }
+.exemplo {
+background-color: #1096D5;
+}
 
-    #esconder:hover {
-        background-color: #034732;
-        transition: 1s;
-    }
+#esconder {
+background-color: #27ae61;
+cursor: pointer;
+transition: 1s;
+}
 
-    .normal {
-    padding: 20px;
-    font-size: 18px;
-    background-color: yellow;
+#esconder:hover {
+background-color: #034732;
+transition: 1s;
+}
+
+.normal {
+padding: 20px;
+font-size: 18px;
+background-color: yellow;
 }
 
 .styling {
-    padding: 60px;
-    font-size: 22px;
-    font-weight: bold;
+padding: 60px;
+font-size: 22px;
+font-weight: bold;
+color: white;
+background-color: black;
+width: 200px;
+border-radius: 60px;
+
+
+}
+
+.tabs {
+    width: 450px;
+    max-width: 100%;
+    background-color: brown;
+    padding: 0px 12px;
+    font-size: 0;
+    margin: 0;
+}
+
+.title-area div {
+    display: inline-block;
+    /* border: 1px solid black; */
+    padding: 15px 0;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
     color: white;
-    background-color: black;
-    width: 200px;
-    border-radius: 60px;
+}
 
+#tab-title {
+    width: 90%;
+}
 
+#toggle-tab {
+    width: 10%;
+    text-align: center;
+    cursor: pointer;
+}
+
+#tab-content {
+    padding: 12px 0;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.flip {
+    transform: rotate(180deg);
 }
 
 </style>
@@ -385,7 +424,42 @@
 
                 <button style="display:none" id="confirmar1">Confirmar</button>
                 <br>
+            </div><br>
+            <div class="item-2">
+                <button id="botao-esconder">Esconder</button>
+                <h4 style="display: none" id="texto-escondido">O botão foi escondido</h4>
+            </div><br>
+            <div class="item-3">
+                <div class="tabs">
+
+                    <div class="title-area">
+                        <div id="tab-title">Título da aba</div>
+                        <div id="toggle-tab">
+                            <svg width="14px" height="9px" viewBox="0 0 14 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                    <g id="Tutorial_800" transform="translate(-392.000000, -1170.000000)" fill-rule="nonzero" stroke="#FFFFFF" stroke-width="2">
+                                        <g id="Group-2" transform="translate(320.000000, 1158.000000)">
+                                            <polyline id="Path-3" points="73 19.2603762 79.1481559 13 85 19.2603762"></polyline>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+
+                        </div>
+                        
+                    </div>
+
+                    <div id="tab-content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue metus mi, a sodales elit blandit in. 
+                            Pellentesque mattis sem vitae diam aliquet gravida. Nulla eu elit non lorem faucibus egestas vitae ac tortor.
+                    </div>
+
+
+                </div>
+
+
             </div>
+
 
 
                 
