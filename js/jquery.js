@@ -213,7 +213,30 @@ $("#botao-esconder1").click(function(){
     $("#texto-escondido").show();
 });
 
+// oculta e desoculta um item da pagina com evento (-toggle()-)
 
+$("#toggle-tab").click(function(){
+    $("#tab-content").toggle();
+    //flip e uma class em css usardo para (transform: rotate(180deg);)
+    $("#toggle-tab").toggleClass("flip");
+});
+
+//---------Slide-----
+
+$("#toggle-tab").click(function(){
+    $("#tab-content").slideToggle(3000, function(){
+        //flip e uma class em css usardo para (transform: rotate(180deg);)
+        $("#toggle-tab").toggleClass("flip");
+    });
+    
+});
+
+//-------fadeToggle =>slow -600ms
+
+$("#toggle-tab1").click(function(){
+    $("#tab-content1").fadeToggle("slow");
+    $("#toggle-tab1").toggleClass("flip");
+});
 
 
 
