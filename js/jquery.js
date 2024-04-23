@@ -150,7 +150,7 @@ $(function() {
 
     $(".item-2").css("text-align", "center",);
 
-    $(".item-3").css("text-align", "left",);
+    $(".item-3").css("text-align", "center",);
 
     $(".item-4").css("text-align", "start",);
 
@@ -163,6 +163,8 @@ $(function() {
     //------
 
     $("#quadrado2").css("text-align", "center",);
+
+    $("#quadro").css("text-align", "center",);
 
     //--Aula -38--JQuery --Manipulação de css -  addClass(), removeClass(), toggleClass()
 
@@ -269,10 +271,24 @@ $(function() {
 
     $("#animar2").click(function(){
         $("#quadrado2").animate({
-            width: "+=200px"
-        },5000).animate({
-            height: "+=200px"
-        },5000);
+            width: "+=150px"
+        },2000).animate({
+            height: "+=150px"
+        },2000).css("background-color", "green");
+
+    });
+
+    // - Aula 42 - Metodos em cadeia/função kalbek
+
+    $("#anima").click(function(){
+
+        $("#quadro").animate({
+            width: "+=150px"
+        },800).animate({
+            height: "+=150px"
+        },800,function(){
+            $("#quadro").css("background-color", "green");
+        });
 
     });
 
