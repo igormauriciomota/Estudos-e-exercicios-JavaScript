@@ -223,7 +223,7 @@ $("#toggle-tab").click(function(){
 
 //---------Slide-----
 
-$("#toggle-tab").click(function(){
+$("#toggle-tab1").click(function(){
     $("#tab-content").slideToggle(3000, function(){
         //flip e uma class em css usardo para (transform: rotate(180deg);)
         $("#toggle-tab").toggleClass("flip");
@@ -238,6 +238,14 @@ $("#toggle-tab1").click(function(){
     $("#toggle-tab1").toggleClass("flip");
 });
 
+// -Aula 41 - Método Animate-------------
+
+$("#animar").click(function(){
+    $("#quadrado").animate({
+        width: "+=20px",
+        height: "+=20px"
+    });
+});
 
 
 
