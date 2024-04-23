@@ -1,4 +1,6 @@
 
+
+
 //==================== Eventos Js
 
 
@@ -521,6 +523,37 @@ console.log(valor_pedagio (categoria_veiculo));
 var categoria_veiculo = "5";
 
 console.log(valor_pedagio (categoria_veiculo));
+
+// Inicio JQuery Style CSS
+$(function() {
+
+
+
+$(".b1").css("background-color","#27ae61",);
+
+$("#b2").css("background-color", "#f9ff",);
+
+$("#b3").css("background-color", "#af9f",);
+
+$("#b4").css("background-color", "#999",);
+
+$("#b5").css("background-color", "#545",);
+
+$("#b6").css("background-color", "#c9c9",);
+
+
+
+
+
+
+});
+
+
+
+
+
+
+
 
 
 

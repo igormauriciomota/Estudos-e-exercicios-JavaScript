@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <link rel="stylesheet" href="css/default.css">
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <link rel="stylesheet" href="css/default.css">
         <script src="tools/indice.js"></script>
         <script>var current_class="metodos-tempo";</script>
         <script src="highlight/highlight.pack.js"></script>
@@ -164,17 +165,17 @@
 </style>
 <body>
     <!-- Evento de click duplo -->
-    <div id="area">
+    <div class="b1" id="area">
         <h1>Evento Javascript</h1>
         <h2>Evento click duplo</h2>
         <p id="texto"></p>
         <button ondblclick="eventoDblClick()">Clique 1</button>
     </div>
-    <div id="area">
+    <div id="area2">
         <h1>Evento Javascript</h1>
         <h2>Eventos Click cor</h2>
         <p id="texto"></p>
-        <button onclick="eventoClick1()">Clique Amarelo 2</button>
+        <button id="b2" onclick="eventoClick1()">Clique Amarelo 2</button>
     </div>
     <div id="area1">
         <h1>Evento Javascript</h1>
@@ -182,11 +183,11 @@
         <p id="texto"></p>
 
     </div>
-    <div id="area">
+    <div id="area2">
         <h1>Evento Javascript</h1>
         <h2>Eventos click cor</h2>
         <p id="texto"></p>
-        <button onclick="eventoClick2()">Clique branco 4</button>
+        <button id="b3" onclick="eventoClick2()">Clique branco 4</button>
     </div>
 
     </div>
@@ -194,15 +195,15 @@
         <h1>Evento Javascript</h1>
         <h2>Eventos click cor</h2>
         <p id="texto"></p>
-        <button onclick="button_clicked()" id="click-me">Clique Aqui 5</button>
+        <button id="b4" onclick="button_clicked()" id="click-me">Clique Aqui 5</button>
     </div>
 
     </div>
-    <div id="area">
+    <div id="area1">
         <h1>Evento Javascript</h1>
         <h2>Eventos click cor</h2>
         <p id="texto"></p>
-        <button onclick="button_clicked()" id="click-me">Clique Aqui 6</button>
+        <button id="b5" onclick="button_clicked()" id="click-me">Clique Aqui 6</button>
     
     </div>
     <!-- Manipulação css -->
