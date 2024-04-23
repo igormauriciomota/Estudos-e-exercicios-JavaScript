@@ -201,6 +201,18 @@ $("#nome1").keyup(function(){
     }
 });
 
+//--Aula -40--JQuery --Efeitos - parametros - metodo-> .hide (esconder) O evento hide é usado para ocultar conteúdo com jQuery
+
+$("#botao-esconder").click(function(){
+    $(this).hide();
+    $("#texto-escondido").show();
+});
+
+$("#botao-esconder1").click(function(){
+    $(this).hide(1000);
+    $("#texto-escondido").show();
+});
+
 
 
 
