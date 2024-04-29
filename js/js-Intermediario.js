@@ -98,3 +98,15 @@ var mensagem;
 mensagem = nome ? "Olá " + nome : "Nome não informado";
 
 console.log(mensagem);
+
+//-----3- forma de escrever muitos codigo-como o Operador If Ternário-
+
+nome = "";
+idade = "";
+
+mensagem = (nome && idade) ? "Olá " + nome + ",  voce tem " + idade + " anos."
+: (!nome && !idade) ? "Nome e idade não informado"
+: (!idade) ? "Idade não informado"
+: "Nome não informado";
+
+console.log(mensagem);
