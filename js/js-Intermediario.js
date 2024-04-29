@@ -68,3 +68,33 @@ try {
 } catch(err) {
     console.log(err);
 }
+
+// Aula 45 - Operador If Ternário
+
+var nome = "";
+
+if (nome) {
+    var mensagem ="Olá " + nome;
+} else {
+    var mensagem = "Nome não informado";
+}
+
+console.log(mensagem);
+
+//-----1- forma de escrever menos codigo--------------------
+
+var mensagem;
+
+nome ? mensagem = "Olá " + nome : mensagem = "Nome não informado";
+
+console.log(mensagem);
+
+//-----2- forma de escrever menos codigo--------------------
+
+// If ternario
+
+var mensagem;
+
+mensagem = nome ? "Olá " + nome : "Nome não informado";
+
+console.log(mensagem);
