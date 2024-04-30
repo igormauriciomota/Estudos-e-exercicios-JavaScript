@@ -110,3 +110,40 @@ mensagem = (nome && idade) ? "Olá " + nome + ",  voce tem " + idade + " anos."
 : "Nome não informado";
 
 console.log(mensagem);
+
+// Aula 46 - Escopo dois tipos de escopo global e local
+// variavel local
+
+function criar_nome() {
+    var nome = 'Maria';
+    console.log(nome); // O console mostrará 'Maria'
+}
+
+// Variavel Global (criar a variavel antes), dentro do objeto window---
+
+var nome;
+
+function criar_nome() {
+    nome = 'Maria';
+    console.log(nome); // O console mostrará 'Maria'
+}
+
+criar_nome();
+
+console.log(nome);
+
+// Objeto eindow - vaiavel foi criado fora do escopo global
+// let dentro das estruturas de bloco / kiword (const)
+
+var x = 0;
+
+if (x== 0) {
+    var nome = "Mariana";
+}
+
+console.log(nome);
+
+for (let a = 0; a < 5; a++) {
+    console.log(a);
+}
+
