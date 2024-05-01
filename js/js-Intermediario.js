@@ -147,3 +147,40 @@ for (let a = 0; a < 5; a++) {
     console.log(a);
 }
 
+//-Aula 47 - Namespaces -simulação colocar um nome que nao gere conflitos
+
+//Ex; dentro do objeto
+
+
+var meuWebapp1 = {
+
+    'nome': "Igor",
+    'ver_nome': function () {
+        console.log(meuWebapp1);
+    }
+};
+
+
+// dentro de uma função
+
+var meuWebapp = (function(){
+
+    var nome = "Igor";
+
+    return {
+        'ver_nome': function(){
+            return nome;
+        },
+        'mudar_nome': function(novo_nome) {
+            nome = novo_nome;
+        },
+        'apagar_nome': function() {
+            nome = null;
+        }
+    }
+
+})();
+
+console.log(meuWebapp.ver_nome() );
+
+
