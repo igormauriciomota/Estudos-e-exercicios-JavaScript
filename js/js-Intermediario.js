@@ -181,6 +181,7 @@ var meuWebapp = (function(){
 
 })();
 
+meuWebapp.mudar_nome("João");
 console.log(meuWebapp.ver_nome() );
 
 
