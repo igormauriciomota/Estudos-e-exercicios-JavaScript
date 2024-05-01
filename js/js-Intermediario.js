@@ -183,8 +183,25 @@ var meuWebapp = (function(){
 // mudar nome
 meuWebapp.mudar_nome("João");
 console.log(meuWebapp.ver_nome() );
-
+// apagar nome
 meuWebapp.apagar_nome();
 console.log(meuWebapp.ver_nome() );
+
+// Aula 48 - JSON.stringify/JSON.parse
+
+//-> ele transforma um objeto ou array em uma string
+var funcionario = {
+    'nome': "Fernanda Costa",
+    'd_nascimento': '1988-10-01',
+    'CPF': '111.111.111-11'
+};
+//Transforma o Objeto em uma string
+var funcionario_json = JSON.stringify(funcionario);
+
+//Transforma uma string em um objeto
+var funcionario_obj = JSON.parse(funcionario_json);
+
+console.log(funcionario_obj);
+
 
 
