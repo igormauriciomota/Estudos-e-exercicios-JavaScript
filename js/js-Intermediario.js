@@ -180,8 +180,11 @@ var meuWebapp = (function(){
     }
 
 })();
-
+// mudar nome
 meuWebapp.mudar_nome("João");
+console.log(meuWebapp.ver_nome() );
+
+meuWebapp.apagar_nome();
 console.log(meuWebapp.ver_nome() );
 
 
