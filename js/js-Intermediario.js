@@ -203,5 +203,27 @@ var funcionario_obj = JSON.parse(funcionario_json);
 
 console.log(funcionario_obj);
 
+// Aula 50 - Ajax Rrquest - Requisição de HTTP
+// requisição HTTP, primeiro devemos criar um novo objeto XMLHttpRequest.
 
+// uso normal de requisição
+//-> var XMLHttp = new XMLHttpRequest();
+
+// uso antigo a uma versão antiga do internet explore
+
+var XMLHttp = new XMLHttpRequest();
+
+// sempre colocar a função antes do pedido
+// -> onreadystatechange: monitora qualquer mudança do estado da requisição,
+
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        console.log(this.responseText);
+    }
+};
+
+// via "GET" ou "POST".
+
+xhttp.open("GET", "https://openweathermap.org/data/2.5/weather?q=London,uk&appid=b6907d289e10d714a6e88b30761fae22");
+xhttp.send();
 
