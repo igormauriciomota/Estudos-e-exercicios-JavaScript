@@ -217,6 +217,35 @@ while (num < 20) {
 
 }
 
+// --
+// Aula 52 - Ajax co jQuery
+// Cria um Objeto
+$.ajax({
+    url: "http://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=8be1aae68be7f754a864aa5026fb84c7",
+    type: "GET",
+    dataType: "json",
+    success: function(data) {
+        console.log(data);
+    },
+    error: function() {
+        console.log('Erro na requisição');
+    }
+});
+
+
+
+$.ajax({
+    url: "http://api.openweathermap.org/data/2.5/weather?q=London&mode=html&appid=8be1aae68be7f754a864aa5026fb84c7",
+    type: "GET",
+    dataType: "json",
+    success: function(data) {
+        console.log(data);
+    },
+    error: function() {
+        console.log('Erro na requisição');
+    }
+});
+
 
 
 
