@@ -246,6 +246,63 @@ $.ajax({
     }
 });
 
+// Aula 52 - Ajax co jQuery
+// Cria um Objeto-> utilizar sempre http:// nao e usado X https
+
+$.ajax({
+    url: "http://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=8be1aae68be7f754a864aa5026fb84c7",
+    type: "GET",
+    dataType: "json",
+}).done(function(data) {
+    console.log(data.main.temp);
+}).fail(function(){
+    console.log('Erro na requisição');
+});
+
+// Cria um Objeto-> utilizar sempre http:// nao e usado X https
+
+$.ajax({
+    url : "http://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=8be1aae68be7f754a864aa5026fb84c7",
+    type: "GET",
+    dataType: "json",
+    success: function(data){
+        console.log(data.main.humidity);
+        console.log(data.main.temp);
+        console.log(data.main.temp_max);
+        console.log(data.main.temp_min);
+    },
+    error: function(){
+        console.log("Erro na requisição");
+    }
+});
+
+
+//Exercicio Aula 52
+
+function apresentar_dados(data) {
+
+    $("#temp_atual").html(data.main.temp);
+    $("#temp_max").html(data.main.temp_max);
+    $("#temp_min").html(data.main.temp_min);
+
+}
+
+function pegar_dados (callback) {
+
+    $.ajax({
+        url : "http://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=8be1aae68be7f754a864aa5026fb84c7",
+        type: "GET",
+        dataType: "json",
+    }).done(function(data){
+        callback(data);
+    }).fail(function(){
+        console.log('Erro na requisição');
+    });
+
+}
+
+pegar_dados(apresentar_dados);
+
 
 
 
