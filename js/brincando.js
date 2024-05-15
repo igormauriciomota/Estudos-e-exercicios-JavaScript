@@ -303,6 +303,34 @@ function pegar_dados (callback) {
 
 pegar_dados(apresentar_dados);
 
+// Exercicio 05 
+// 01-Popule o select box abaixo com a lista de países do mundo. A tarefa deve ser realizada em duas partes:
+//->name - altSpellings - area - capital - continents - languages
+
+
+function pegar_paises(callback) {
+
+    $.ajax({
+        url : "https://restcountries.com/v3.1/all",
+        type: "GET",
+        dataType: "json",
+    }).done(function(data){
+        callback(data);
+    }).fail(function(){
+        console.log('Erro na requisição');
+    });
+
+}
+
+function popular_paises(paises) {
+    //lup for - Array
+    for (var a = 0; a < paises.length; a++) {
+        document.getElementById("paises").innerHTML += '<option selected value="' + paises[a].altSpellings + '">' + paises[a].altSpellings + '</option>';
+    }
+}
+
+pegar_paises(popular_paises);
+
 
 
 
