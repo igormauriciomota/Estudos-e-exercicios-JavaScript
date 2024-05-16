@@ -333,7 +333,64 @@ pegar_paises(popular_paises);
 
 
 
+// 02- Crie uma função para receber o array abaixo como argumento e calcular a média de avaliações
+//dos cursos e soltá-las no console. Use Try/Catch/Throw para atender às condições abaixo:
 
+var cursos = [
+    {
+        "titulo": "PHP",
+        "aval": []
+    },
+    {
+        "titulo": "Javascript",
+        "aval": [5,5,4.5,4,5,5,5,4.5]
+    },
+    {
+        "titulo": "Python",
+        "aval": [5,5,4,4,5,3,5,4,4,5]
+    },
+    {
+        "titulo": "Machine Learning",
+        "aval": [5,5,4.5]
+    }
+];
+
+function media_aval(lista_cursos) {
+
+    for (var a = 0; a < lista_cursos.length; a++) {
+
+        try {
+
+            if (lista_cursos[a].aval.length == 0) {
+                throw 'curso ' + lista_cursos[a].titulo + ' não possui avaliações.';
+            } else if (lista_cursos[a].aval.length < 5) {
+                throw 'curso ' + lista_cursos[a].titulo + ' possui menos de 5 avaliaçoes.'
+            }
+
+            var soma = 0;
+
+            for (var b = 0; b < lista_cursos[a].aval.length; b++) {
+                soma += lista_cursos[a].aval[b];
+            }
+
+            var media = soma / lista_cursos[a].aval.length;
+
+            console.log('curso ' + lista_cursos[a].titulo + ' tem média de avaliaçoes: ' + media.toFixed(2));
+
+        }
+
+        catch(err) {
+            console.log(err);
+
+        }
+
+
+    }
+}
+
+media_aval(cursos);
+
+// 03- 
 
 
 
