@@ -390,7 +390,55 @@ function media_aval(lista_cursos) {
 
 media_aval(cursos);
 
-// 03- 
+// Exercicio 03 -
+
+var theUserNamespace = {
+
+    'usuario': {
+        "33884h": "João Gomes",
+        "43585f": "Maria Luisa",
+        "93661h": "Pedro Henqrique",
+        "23172g": "Paula Carvalho",
+    },
+
+    'acessos': [
+        {
+            "usuario": "33884h",
+            "data": "10/07/18"
+        },
+        {
+            "usuario": "33884h",
+            "data": "11/07/18"
+        },
+        {
+            "usuario": "3585f",
+            "data": "19/07/18"
+        },
+        {
+            "usuario": "93661h",
+            "data": "24/07/18"
+        },
+        {
+            "usuario": "23172g",
+            "data": "13/08/18"
+        },
+        {
+            "usuario": "93661h",
+            "data": "14/08/18"
+        }
+
+    ],
+
+    'imprimir_acessos':function() {
+        for (var a = 0; a < this.acessos.length; a++) {
+            $("#acessos").append('<p>Acesso de '+ this.usuario[this.acessos[a].usuario] +', no dia ' + this.acessos[a].data + '</p>');
+        }
+    }
+    
+}
+
+theUserNamespace.imprimir_acessos();
+
 
 
 
