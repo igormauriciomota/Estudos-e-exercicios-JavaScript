@@ -439,8 +439,60 @@ var theUserNamespace = {
 
 theUserNamespace.imprimir_acessos();
 
+// exercicio 04
+//<h3 id="pergunta"></h3> <form id="opcoes"> <input type="radio" name="opcao" value="resposta1"> Resposta 1<br>
+// <p id="erro_acerto"></p> <button style="display:none" id="submeter">Enviar Resposta</button>
+
+function shuffle(array) {
+    let counter = array.length;
+
+    while (counter > 0) {
+
+        let index = Math.floor(Math.random() * counter);
+
+        counter--;
+    
+        let temp = array[counter];
+        array[counter] = array[index];
+        array[index] = temp;
+
+    }
+
+    return array;
+
+}
+
+function pegar_pergunta(callback) {
+
+    $.ajax({
+        url : "https://opentdb.com/api.php?amount=1&category=11",
+        type: "GET",
+        dataType: "json",
+    }).done(function(data){
+        callback(data.results[0]);
+    }).fail(function(){
+        console.log('Erro na requisição');
+    });
+
+}
+
+function gerar_pergunta(pergunta) {
+    $("#pergunta").html(pergunta.question);
+    var resposta_correta = pergunta.correct_answer;
+    var respostas = pergunta.incorrect_answers;
+    respostas.push(resposta_correta);
+    respostas = shuffle(respostas);
+
+    console.log('resposta correta: ', resposta_correta);
+    console.log('respostas: ', respostas);
 
 
+}
+
+
+
+
+pegar_pergunta(gerar_pergunta);
 
 
 
