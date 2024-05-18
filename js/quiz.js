@@ -1,4 +1,4 @@
-// Jogo de Perguntas e respostas
+// Jogo de Perguntas e respostas / site https://opentdb.com/api_config.php
 
 //Exercicio 04 -Url: https://opentdb.com/api.php?amount=1&category=11
 
